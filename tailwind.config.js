@@ -1,7 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  important: "#root",
+  // important: "#root",
   purge: {
     content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
     options: {
@@ -65,8 +65,6 @@ module.exports = {
         warning: "#B95000",
         error: "#DA1414",
         info: "#2E5AAC",
-      },
-      statusBg: {
         successBg: "#EDF9F0",
         warningBg: "#FFF4EC",
         errorBg: "#FEEFEF",
@@ -153,7 +151,7 @@ module.exports = {
         "paragraph-base": [
           "18px",
           {
-            letterSpacing: "1rem",
+            letterSpacing: "1",
             lineHeight: "155.56%",
           },
         ],
