@@ -30,9 +30,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      display: ["DMSans", "system-ui", "sans-serif"],
-      body: ["DMSans", "system-ui", "sans-serif"],
-      Merriweather: ["Merriweather", "system-ui", "sans-serif"],
+      display: ["Josefin Sans", "system-ui", "sans-serif"],
       LineAwesome: ["Line Awesome Free", "system-ui", "sans-serif"],
     },
     colors: {
@@ -151,19 +149,17 @@ module.exports = {
         f5: ["22.5px", "124.44%"],
         f6: ["18px", "155.56%"],
         //
-        paragraph: {
-          large: ["28px", { lineHeight: "128.57%" }],
-          base: [
-            "18px",
-            {
-              letterSpacing: "1rem",
-              lineHeight: "155.56%",
-            },
-          ],
-          small: ["16px", { lineHeight: "150%" }],
-          "xs-small": ["14px", { lineHeight: "142.86%" }],
-          tiny: ["12px", { lineHeight: "133.33%" }],
-        },
+        "paragraph-large": ["28px", { lineHeight: "128.57%" }],
+        "paragraph-base": [
+          "18px",
+          {
+            letterSpacing: "1rem",
+            lineHeight: "155.56%",
+          },
+        ],
+        "paragraph-small": ["16px", { lineHeight: "150%" }],
+        "paragraph-xs-small": ["14px", { lineHeight: "142.86%" }],
+        "paragraph-tiny": ["12px", { lineHeight: "133.33%" }],
         "small-caps": [
           "18px",
           {
