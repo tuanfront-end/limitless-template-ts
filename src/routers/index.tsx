@@ -4,8 +4,11 @@ import HomePage from "containers/HomePage/HomePage";
 import { Page } from "./types";
 import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
+import { ComponentsPage } from "containers/ComponentsPage/ComponentsPage";
 
-export const pages: Page[] = [{ path: "/", exact: true, component: HomePage }];
+export const pages: Page[] = [
+  { path: "/", exact: true, component: ComponentsPage },
+];
 
 const Routes = () => {
   return (
