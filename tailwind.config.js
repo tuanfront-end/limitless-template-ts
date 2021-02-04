@@ -80,11 +80,9 @@ module.exports = {
       },
       outline: {},
       borderColor: {
-        primary: "#FFDCBE",
-        secondary: "#2DDE98",
-        tertiary: "#F57171",
-        quateary: "#311695",
-        black: "#000",
+        primary: "#EC6041",
+        secondary: "#B3421A",
+        black: "#121212",
         white: "#fff",
       },
       boxShadow: {
@@ -167,7 +165,7 @@ module.exports = {
         ],
         "button-large": ["20px", "140%"],
         "button-medium": ["16px", "150%"],
-        "button-smmal": ["14px", "143%"],
+        "button-small": ["14px", "143%"],
         "link-large": ["18px", "178%"],
         "link-medium": ["18px", "156%"],
         "link-large": ["14px", "143%"],
@@ -184,7 +182,7 @@ module.exports = {
       fontWeight: ["hover", "group-hover", "focus"],
       backgroundColor: ["checked", "disabled"],
       textColor: ["disabled"],
-      borderColor: ["checked"],
+      borderColor: ["checked", "disabled"],
     },
   },
   plugins: [
