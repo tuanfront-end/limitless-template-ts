@@ -31,9 +31,7 @@ const FormSignUp: FC<FormSignUpProps> = () => {
           }
         />
 
-        <Button bgColor="bg-primary" textColor="text-gray-900">
-          Sign up
-        </Button>
+        <Button>Sign up</Button>
         <div className="text-center">
           <span>Or sign in with social</span>
         </div>

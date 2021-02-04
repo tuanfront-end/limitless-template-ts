@@ -42,9 +42,7 @@ const FormSignIn: FC<FormSignInProps> = () => {
             Forgot password?
           </ButtonOpenModal>
         </div>
-        <Button bgColor="bg-primary" textColor="text-gray-900">
-          Sign in
-        </Button>
+        <Button>Sign in</Button>
         <div className="text-center">
           <span>Or sign in with social</span>
         </div>
