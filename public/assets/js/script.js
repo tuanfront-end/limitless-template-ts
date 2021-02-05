@@ -1,6 +1,7 @@
 window.addEventListener("load", function () {
-  // _toogleNightMode();
-  // _handleToggleDropdown();
+  _toogleNightMode();
+  _handleToggleDropdown();
+  _toggleModal();
   // _newGlideCarousel();
   // _toogleWilModal();
   // _setBgColorForAvatar();
@@ -73,6 +74,20 @@ function _toogleNightMode() {
   });
 }
 
+function _toggleModal() {
+  const btnToggle = [...document.querySelectorAll(`[data-ttnc-modal-toggle]`)];
+  if (!btnToggle || !btnToggle.length) return;
+  btnToggle.forEach((element) => {
+    element.addEventListener("click", function () {
+      const modalID = element.getAttribute("data-ttnc-modal-toggle");
+      document.getElementById(modalID).classList.toggle("hidden");
+      document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+      document.getElementById(modalID).classList.toggle("flex");
+      document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+    });
+  });
+}
+
 function _toogleWilModal() {
   const btnOpens = [...document.querySelectorAll(`[wil-open-modal]`)];
   if (!btnOpens || !btnOpens.length) return;
@@ -106,29 +121,20 @@ function _toogleWilModal() {
 }
 
 function _handleToggleDropdown() {
-  const btns = [...document.querySelectorAll(".wil-dropdown__btn")];
-  const dropdowns = [...document.querySelectorAll(".wil-dropdown__panel")];
+  const btns = [...document.querySelectorAll(".ttnc-dropdown__btn")];
+  const dropdowns = [...document.querySelectorAll(".ttnc-dropdown__panel")];
   if (!btns || !btns.length) return;
   btns.forEach((element, key, parent) => {
     const panel = element.nextElementSibling;
     const panelClass = panel.classList;
-
     if (!panel) return;
     element.addEventListener("click", () => {
+      var popper = new Popper(element, panel, {
+        placement: "bottom-start",
+      });
       panelClass.toggle("hidden");
+      panelClass.toggle("block");
     });
-  });
-
-  // === hidden all dropdow if windown click outside dropdown
-  document.addEventListener("click", (event) => {
-    if (btns.some((btn) => btn.contains(event.target))) {
-      return;
-    } else {
-      dropdowns.forEach(
-        (panel) =>
-          !panel.classList.contains("hidden") && panel.classList.add("hidden")
-      );
-    }
   });
 }
 

@@ -2,21 +2,16 @@ import React from "react";
 
 export interface DropdownPanelProps {
   containerClassName?: string;
-  sizeClass?: string;
-  radius?: string;
-  position?: string;
 }
 
 const DropdownPanel: React.FC<DropdownPanelProps> = ({
   children,
-  containerClassName = "shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50",
-  sizeClass = "w-56",
-  radius = "rounded-md",
-  position = "right-0 mt-2",
+  containerClassName = "",
 }) => {
   return (
     <div
-      className={`wil-dropdown__panel hidden origin-top-right absolute ${position} ${containerClassName} ${sizeClass} ${radius}`}
+      className={`ttnc-dropdown__panel bg-white  text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1 ${containerClassName}`}
+      style={{ minWidth: "12rem" }}
     >
       {children}
     </div>

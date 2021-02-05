@@ -159,8 +159,15 @@ module.exports = {
         "small-caps": [
           "18px",
           {
-            lineHeight: "111.11%",
-            letterSpacing: "5%",
+            lineHeight: "111%",
+            letterSpacing: "0.05em",
+          },
+        ],
+        "small-caps-medium": [
+          "14px",
+          {
+            lineHeight: "143%",
+            letterSpacing: "0.08em",
           },
         ],
         "button-large": ["20px", "140%"],

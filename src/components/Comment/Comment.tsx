@@ -50,10 +50,7 @@ const Comment: FC<CommentProps> = ({
             <Dropdown.DropdownTrigger>
               <i className="text-2xl las la-ellipsis-h leading-none"></i>
             </Dropdown.DropdownTrigger>
-            <Dropdown.DropdownPanel
-              sizeClass="w-40 overflow-hidden"
-              radius="rounded-2.5xl"
-            >
+            <Dropdown.DropdownPanel containerClassName="w-40 overflow-hidden rounded-2.5xl">
               <div
                 className="text-base text-gray-700 py-2 leading-tight"
                 role="menu"

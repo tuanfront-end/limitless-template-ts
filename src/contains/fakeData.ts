@@ -80,19 +80,19 @@ const imgHigtQualitys = [
 ];
 
 const aTitles = [
-  "adipiscing bibendum est ultricies integer quis auctor elit sed vulputate",
-  "in arcu cursus euismod quis viverra nibh cras pulvinar mattis",
-  "natoque penatibus et magnis dis parturient montes nascetur ridiculus mus",
-  "et leo duis ut diam quam nulla porttitor massa id",
-  "turpis cursus in hac habitasse platea dictumst quisque sagittis purus",
-  "ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt",
-  "interdum velit euismod in pellentesque massa placerat duis ultricies lacus",
-  "fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque",
-  "sagittis vitae et leo duis ut diam quam nulla porttitor",
-  "in mollis nunc sed id semper risus in hendrerit gravida",
-  "tellus integer feugiat scelerisque varius morbi enim nunc faucibus a",
-  "eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci",
-  "non sodales neque sodales ut etiam sit amet nisl purus",
+  "adipiscing bibendum est ultricies integer",
+  "in arcu cursus euismod quis viverra nibh",
+  "natoque penatibus et magnis dis parturient",
+  "et leo duis ut diam quam nulla porttitor",
+  "turpis cursus in hac habitasse platea dictumst",
+  "ut faucibus pulvinar elementum integer enim neque",
+  "interdum velit euismod in pellentesque massa p",
+  "fringilla ut morbi tincidunt augue interdum velit",
+  "sagittis vitae et leo duis ut diam quam nulla ",
+  "in mollis nunc sed id semper risus in hendrerit",
+  "tellus integer feugiat scelerisque varius morbi",
+  "eleifend mi in nulla posuere sollicitudin aliquam",
+  "non sodales neque sodales ut etiam sit amet nisl",
 ];
 
 const avatarColors = [
