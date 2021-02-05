@@ -7,6 +7,7 @@ export interface ButtonProps {
   color?: "primary" | "secondary" | "neutral";
   disabled?: boolean;
   isOnlyIcon?: boolean;
+  modalToggleId?: string;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -17,6 +18,7 @@ const Button: FC<ButtonProps> = ({
   disabled = false,
   isOnlyIcon = false,
   children,
+  modalToggleId,
 }) => {
   let classes = containerClassName;
 
@@ -72,6 +74,8 @@ const Button: FC<ButtonProps> = ({
           return "text-primary border-primary border-2";
         case "secondary":
           return "text-secondary border-secondary border-2";
+        case "neutral":
+          return "text-action-neutral border-action-neutral border-2";
         default:
           return "";
       }
@@ -93,7 +97,8 @@ const Button: FC<ButtonProps> = ({
   return (
     <button
       disabled={disabled}
-      className={`ttnc-button ${classes} inline-flex items-center justify-center text-center  mb-2`}
+      className={`ttnc-button ${classes} inline-flex items-center justify-center text-center mb-2`}
+      data-ttnc-modal-toggle={modalToggleId}
     >
       {children || `This Button`}
     </button>

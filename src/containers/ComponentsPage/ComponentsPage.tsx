@@ -1,4 +1,5 @@
 import Modal from "components/Modal/Modal";
+import SearchInput from "components/SearchInput/SearchInput";
 import React from "react";
 import { Alerts } from "./Alerts";
 import { Avatars } from "./Avatars";
@@ -18,7 +19,11 @@ export const ComponentsPage: React.FC = () => {
           {/* <Cards /> */}
           {/* <Dropdowns /> */}
           {/* <Messages /> */}
-          <Modal />
+          {/* <Modal /> */}
+          {/* <SearchInput /> */}
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            Hello my name tuan
+          </a>
         </div>
       </div>
     </div>

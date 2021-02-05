@@ -70,6 +70,12 @@ module.exports = {
         errorBg: "#FEEFEF",
         infoBg: "#EEF2FA",
       },
+      action: {
+        primary: "#EC6041",
+        inverted: "#B24219",
+        secondary: "#5E38BA",
+        neutral: "#443B39",
+      },
       facebook: "#325D94",
       googlePlus: "#DF2E1C",
       twitter: "#00AADB",

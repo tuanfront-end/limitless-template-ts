@@ -80,42 +80,11 @@ function _toggleModal() {
   btnToggle.forEach((element) => {
     element.addEventListener("click", function () {
       const modalID = element.getAttribute("data-ttnc-modal-toggle");
+      if (!modalID) return;
       document.getElementById(modalID).classList.toggle("hidden");
       document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
       document.getElementById(modalID).classList.toggle("flex");
       document.getElementById(modalID + "-backdrop").classList.toggle("flex");
-    });
-  });
-}
-
-function _toogleWilModal() {
-  const btnOpens = [...document.querySelectorAll(`[wil-open-modal]`)];
-  if (!btnOpens || !btnOpens.length) return;
-  btnOpens.forEach((elment) => {
-    const modalId = elment.getAttribute("wil-open-modal");
-    const modalNode = document.querySelector(`#${modalId}`);
-
-    if (!modalNode) return;
-
-    elment.addEventListener("click", () => {
-      modalNode.classList.toggle("hidden");
-      //=== When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target === modalNode) {
-          modalNode.classList.add("hidden");
-        }
-      };
-    });
-
-    // === Close modal function
-    const btnCloses = document.querySelectorAll(
-      `[wil-close-modal='${modalId}']`
-    );
-    if (!btnCloses) return;
-    btnCloses.forEach((el) => {
-      el.addEventListener("click", () => {
-        modalNode.classList.add("hidden");
-      });
     });
   });
 }
