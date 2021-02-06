@@ -1,8 +1,10 @@
+import Button from "components/Button/Button";
 import React from "react";
 import { Link } from "react-router-dom";
 import { LocationStates } from "routers/types";
+import NavMobile from "./NavMobile";
 
-interface NavItemType {
+export interface NavItemType {
   id: number;
   name: string;
   //   link: keyof LocationStates;
@@ -68,6 +70,8 @@ const DATA: NavItemType[] = [
 ];
 
 function Navigation() {
+  const navMobileId = "ttnc-nav-mobbile";
+
   const _renderMenuChild = (item: NavItemType, className = "top-full") => {
     return (
       <div className={`sub-menu absolute py-3 px-2 z-50 w-60 ${className}`}>
@@ -114,9 +118,27 @@ function Navigation() {
   };
 
   return (
-    <nav className="flex flex-wrap text-sm lg:text-base font-medium capitalize">
-      {DATA.map(_renderItem)}
-    </nav>
+    <div>
+      <div className="block lg:hidden">
+        <Button size="small" type="ghost" modalToggleId={navMobileId}>
+          Menu
+        </Button>
+        <div
+          className="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center"
+          id={navMobileId}
+        >
+          <NavMobile data={DATA} id={navMobileId} />
+        </div>
+        <div
+          className="hidden opacity-25 fixed inset-0 z-40 bg-black"
+          id={`${navMobileId}-backdrop`}
+          data-ttnc-modal-toggle={navMobileId}
+        ></div>
+      </div>
+      <nav className="hidden lg:flex flex-wrap text-sm lg:text-base font-medium capitalize">
+        {DATA.map(_renderItem)}
+      </nav>
+    </div>
   );
 }
 

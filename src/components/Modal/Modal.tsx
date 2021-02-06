@@ -105,7 +105,7 @@ const Modal: React.FC<ModalProps> = ({
         </div>
       </div>
       <div
-        className="hidden opacity-25 fixed inset-0 z-40 bg-black"
+        className="hidden opacity-30 fixed inset-0 z-40 bg-black"
         id={`${id}-backdrop`}
         data-ttnc-modal-toggle={id}
       ></div>

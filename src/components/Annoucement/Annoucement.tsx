@@ -5,13 +5,13 @@ const Annoucement = () => {
   return (
     <div
       id="top-annoucement"
-      className="bg-secondary py-2 px-6 text-center relative"
+      className="bg-secondary py-2 px-10 text-center relative"
     >
-      <span className="text-paragraph-base text-white mr-6">
+      <span className="text-paragraph-xs-small lg:text-paragraph-base text-white md:mr-6 mb-2 md:mb-0 block md:inline-block">
         Purus consectetur feugiat consectetur imperdiet ante ac pulvinar nec.
       </span>
       <a
-        className="uppercase no-underline shadow-none text-button-small text-white border-2 border-white py-2 px-3 hover:shadow-none hover:text-white hover:opacity-90"
+        className="uppercase no-underline shadow-none text-xs lg:text-button-small text-white border-2 border-white py-2 px-3 hover:shadow-none hover:text-white hover:opacity-90"
         href="http://#"
         target="_blank"
         rel="noopener noreferrer"

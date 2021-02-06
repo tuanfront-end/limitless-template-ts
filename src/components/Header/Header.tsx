@@ -2,18 +2,15 @@ import Annoucement from "components/Annoucement/Annoucement";
 import Button from "components/Button/Button";
 import Logo from "components/Logo/Logo";
 import Navigation from "components/Navigation/Navigation";
-import SearchInput from "components/SearchInput/SearchInput";
 import SwithNightMode from "components/SwithNightMode/SwithNightMode";
 import React from "react";
 
 export default function Header() {
   return (
     <div>
-      <div>
-        <Annoucement />
-      </div>
+      <Annoucement />
       <div
-        className="hidden md:block relative bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700"
+        className="block relative bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700"
         id="ttnc-header-02"
       >
         <div className="container">
@@ -22,13 +19,11 @@ export default function Header() {
               <Logo />
             </div>
 
-            <div className="flex flex-wrap text-sm lg:text-base font-medium capitalize">
-              <Navigation />
-            </div>
+            <Navigation />
 
-            <div className="lg:w-0 lg:flex-1 flex-shrink-0 md:flex items-center justify-end text-gray-900 dark:text-gray-100">
-              {/* <SearchInput /> */}
+            <div className="lg:w-0 lg:flex-1 flex-shrink-0 hidden lg:flex items-center justify-end space-x-4">
               <SwithNightMode />
+              <Button size="small">Get Template</Button>
             </div>
           </div>
         </div>

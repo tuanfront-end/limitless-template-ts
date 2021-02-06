@@ -15,7 +15,7 @@ const ButtonScroll: React.FC<ButtonScrollProps> = ({ children = "Scroll" }) => {
           <path
             d="M25 18.5L13 34.5L1 18.5M13 27V0"
             stroke="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </g>
         <defs>
@@ -26,9 +26,9 @@ const ButtonScroll: React.FC<ButtonScrollProps> = ({ children = "Scroll" }) => {
             width="29.6"
             height="40.1667"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"

@@ -13,6 +13,7 @@ const ButtonClose: React.FC<ButtonClose> = ({
       className={`text-2xl flex items-center justify-center ${containerClassName}`}
       data-ttnc-modal-toggle={modalToggleId}
     >
+      <span className="sr-only">Close</span>
       <i className="las la-times"></i>
     </button>
   );
