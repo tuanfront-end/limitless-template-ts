@@ -1,3 +1,4 @@
+import Input from "components/Input/Input";
 import Modal from "components/Modal/Modal";
 import SearchInput from "components/SearchInput/SearchInput";
 import React from "react";
@@ -6,6 +7,7 @@ import { Avatars } from "./Avatars";
 import { Buttons } from "./Buttons";
 import Cards from "./Cards";
 import Dropdowns from "./Dropdowns";
+import Forms from "./Forms";
 import Messages from "./Messages";
 
 export const ComponentsPage: React.FC = () => {
@@ -24,6 +26,9 @@ export const ComponentsPage: React.FC = () => {
           <a href="http://" target="_blank" rel="noopener noreferrer">
             Hello my name tuan
           </a>
+          <div>
+            <Forms />
+          </div>
         </div>
       </div>
     </div>
