@@ -4,7 +4,7 @@ export interface FooterWidgetNavProps {}
 
 const FooterWidgetNav: FC<FooterWidgetNavProps> = () => {
   return (
-    <ul className="space-y-4 text-gray-500">
+    <ul className="space-y-4 text-neutral-500">
       <li>
         <a
           className="hover:text-white transition-colors duration-200"

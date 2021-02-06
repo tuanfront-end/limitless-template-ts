@@ -2,9 +2,10 @@ window.addEventListener("load", function () {
   _toogleNightMode();
   _handleToggleDropdown();
   _toggleModal();
+  _hiddenTopAnnoucement();
   // _newGlideCarousel();
   // _toogleWilModal();
-  // _setBgColorForAvatar();
+  _setBgColorForAvatar();
   //
 });
 
@@ -195,5 +196,14 @@ function _setBgColorForAvatar() {
     const backgroundColor = avatarColors[backgroundIndex];
     //
     element.style.backgroundColor = backgroundColor;
+  });
+}
+
+function _hiddenTopAnnoucement() {
+  const node = document.querySelector("#top-annoucement");
+  const closeBtn = document.querySelector("#top-annoucement-close");
+  if (!node || !closeBtn) return;
+  closeBtn.addEventListener("click", function () {
+    node.classList.add("hidden");
   });
 }

@@ -8,7 +8,7 @@ const IconDotVertical = () => {
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
-        className="text-gray-500  hover:text-gray-300"
+        className="text-neutral-500  hover:text-neutral-300"
       >
         <path
           strokeLinecap="round"

@@ -6,7 +6,7 @@ const IconLikeCard = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        className="stroke-current text-gray-500 hover:text-gray-300"
+        className="stroke-current text-neutral-500 hover:text-neutral-300"
         stroke="currentColor"
         fill="none"
       >

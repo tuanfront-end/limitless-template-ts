@@ -16,18 +16,18 @@ export const ComponentsPage: React.FC = () => {
     <div className="bg-white dark:bg-black">
       <div className="max-w-body mx-auto">
         <div className="space-y-8 md:space-y-9">
-          {/* <Alerts /> */}
-          {/* <Avatars /> */}
-          {/* <Buttons /> */}
-          {/* <Cards /> */}
-          {/* <Dropdowns /> */}
-          {/* <Messages /> */}
-          {/* <Modal /> */}
-          {/* <SearchInput /> */}
-          {/* <a href="http://" target="_blank" rel="noopener noreferrer">
+          <Alerts />
+          <Avatars />
+          <Buttons />
+          <Cards />
+          <Dropdowns />
+          <Messages />
+          <Modal />
+          <SearchInput />
+          <a href="http://" target="_blank" rel="noopener noreferrer">
             Hello my name tuan
           </a>
-          <Forms /> */}
+          <Forms />
           <Typographys />
         </div>
       </div>

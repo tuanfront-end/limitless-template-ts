@@ -14,7 +14,7 @@ const CardPersonSmall = () => {
         <span className="text-f4 font-bold text-black dark:text-white mb-1">
           {name}
         </span>
-        <span className="text-small-caps-medium uppercase text-gray-200 dark:text-gray-800">
+        <span className="text-small-caps-medium uppercase text-neutral-200 dark:text-neutral-800">
           {_getPersonNameRd()}
         </span>
       </div>

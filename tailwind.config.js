@@ -1,7 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  // important: "#root",
+  important: "#root",
   purge: {
     content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
     options: {
@@ -41,7 +41,7 @@ module.exports = {
       secondary: "#B3421A",
       black: "#121212",
       white: "#fff",
-      gray: {
+      neutral: {
         100: "#1C1C1C",
         200: "#414141",
         300: "#848484",
@@ -91,7 +91,7 @@ module.exports = {
         black: "#121212",
         white: "#fff",
       },
-      boxShadow: {
+      boxShadow: (theme) => ({
         tight: {
           1: "4px 4px 0px #F1876F, 8px 8px 0px #F5AE9E",
           2: "0px 1.25px 4px rgba(0, 0, 0, 0.25)",
@@ -113,7 +113,9 @@ module.exports = {
           7: "0px 35px 90px rgba(0, 0, 0, 0.135)",
         },
         button: "4px 4px 0px #F1876F, 8px 8px 0px #F5AE9E",
-      },
+        "link-thin": `inset 0 -3px 0 0 ${theme("colors.primary")}`,
+        "link-tick": `inset 0 -6px 0 0 ${theme("colors.primary")}`,
+      }),
       zIndex: {
         "-1": "-1",
         max: 2147483647,
@@ -186,7 +188,9 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme("colors.black"),
+            a: {
+              textDecoration: "none",
+            },
           },
         },
       }),

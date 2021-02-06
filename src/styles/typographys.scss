@@ -2,20 +2,10 @@ body {
   @apply font-display;
 }
 
-body,
-p {
-  line-height: 170%;
-}
-
-a {
-  @apply text-black;
-  box-shadow: inset 0 -3px 0 0 theme("colors.primary");
-  transition: box-shadow 0.2s;
-  &:hover {
-    box-shadow: inset 0 -6px 0 0 theme("colors.primary");
-    @apply text-primary;
-  }
-}
+// body,
+// p {
+//   line-height: 170%;
+// }
 
 a,
 label {
@@ -23,25 +13,9 @@ label {
 }
 
 //
-.prose {
-  h1,
-  h2,
-  strong,
-  thead {
-    @apply text-black font-bold;
-  }
-
-  h3,
-  h4,
-  h5,
-  h6,
-  [class~="lead"],
-  blockquote,
-  code,
-  a code {
-    @apply text-black font-semibold;
-  }
+#root .prose {
   a {
-    @apply no-underline text-black;
+    transition: box-shadow 0.2s;
+    @apply text-black shadow-link-thin hover:text-primary hover:shadow-link-tick;
   }
 }

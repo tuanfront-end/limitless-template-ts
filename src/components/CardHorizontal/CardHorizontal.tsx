@@ -59,14 +59,14 @@ const CardHorizontal: React.FC<CardHorizontalProps> = ({
       {_renderImageFeatured()}
       <div className="px-6">
         {enableLeading && (
-          <span className="text-small-caps text-gray-200 dark:text-gray-800 font-bold mb-1">
+          <span className="text-small-caps text-neutral-200 dark:text-neutral-800 font-bold mb-1">
             Card Leading
           </span>
         )}
         <h2 className="text-f5 font-bold text-black dark:text-white mb-3 capitalize">
           <a href="//#endregion"> {title}</a>
         </h2>
-        <span className="text-paragraph-small font-normal text-gray-200 dark:text-gray-800">
+        <span className="text-paragraph-small font-normal text-neutral-200 dark:text-neutral-800">
           Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed
           quisque velit, auctor at lobortis hac tincidunt sodales id. Elit
           interdum vel nisi, in enim sagittis at. Netus sagittis eleifend

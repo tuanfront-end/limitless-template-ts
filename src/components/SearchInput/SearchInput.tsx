@@ -15,10 +15,10 @@ export default function SearchInput({
     >
       <button
         type="submit"
-        className={`absolute right-1 mr-1px top-1/2 transform -translate-y-1/2 text-gray-900 ${
+        className={`absolute right-1 mr-1px top-1/2 transform -translate-y-1/2 text-neutral-900 ${
           type === "type1"
             ? "bg-primary"
-            : "hover:bg-gray-100 dark:text-gray-100"
+            : "hover:bg-neutral-100 dark:text-neutral-100"
         } rounded-full w-8 h-8 flex justify-center items-center`}
       >
         <i className="las la-search text-lg leading-none"></i>
@@ -27,7 +27,7 @@ export default function SearchInput({
         type="text"
         aria-label="Search travel, lifestyle…"
         placeholder="Search travel, lifestyle…"
-        className="w-full h-10 lg:h-11 text-sm lg:text-base rounded-full pr-10 text-gray-900 dark:text-gray-100 placeholder-gray-700 dark:placeholder-gray-300 border-gray-300 bg-transparent focus:border-primary focus:ring-0"
+        className="w-full h-10 lg:h-11 text-sm lg:text-base rounded-full pr-10 text-neutral-900 dark:text-neutral-100 placeholder-neutral-700 dark:placeholder-neutral-300 border-neutral-300 bg-transparent focus:border-primary focus:ring-0"
       />
     </form>
   );

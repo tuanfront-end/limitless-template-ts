@@ -30,7 +30,7 @@ const Textarea: React.FC<TextareaProps> = ({
           placeholder={placeholder}
         ></textarea>
       </div>
-      {desc && <p className="mt-2 text-sm text-gray-500">{desc}</p>}
+      {desc && <p className="mt-2 text-sm text-neutral-500">{desc}</p>}
     </div>
   );
 };

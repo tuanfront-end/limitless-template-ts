@@ -8,8 +8,8 @@ export interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ id = "ttnc-modal-id" }) => {
   const _renderHeader = () => {
     return (
-      <div className="flex items-start justify-between px-6 py-4 pb-3 border-b border-solid border-gray-700">
-        <div className="flex text-gray-300">
+      <div className="flex items-start justify-between px-6 py-4 pb-3 border-b border-solid border-neutral-700">
+        <div className="flex text-neutral-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -45,7 +45,7 @@ const Modal: React.FC<ModalProps> = ({ id = "ttnc-modal-id" }) => {
 
   const _renderFooter = () => {
     return (
-      <div className="flex justify-end px-6 py-4 space-x-4 border-t border-solid border-gray-700 rounded-b">
+      <div className="flex justify-end px-6 py-4 space-x-4 border-t border-solid border-neutral-700 rounded-b">
         <Button size="small" type="ghost" color="neutral" modalToggleId={id}>
           small button
         </Button>

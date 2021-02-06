@@ -62,7 +62,10 @@ const Typographys = () => {
         <p>
           For more information about how to use the plugin and the features it
           includes,
-          <a href="https://github.com/tailwindcss/typography/blob/master/README.md">
+          <a
+            className="shadow-link-thin hover:shadow-link-tick"
+            href="https://github.com/tailwindcss/typography/blob/master/README.md"
+          >
             read the documentation
           </a>
           .

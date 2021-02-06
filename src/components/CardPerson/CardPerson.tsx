@@ -12,7 +12,7 @@ const CardPerson = () => {
       <span className="text-f3 text-black dark:text-white font-bold mb-8">
         {_getPersonNameRd()}
       </span>
-      <span className="text-paragraph-base text-gray-200 dark:text-gray-800">
+      <span className="text-paragraph-base text-neutral-200 dark:text-neutral-800">
         Tortor sit nisl purus nunc massa diam velit hac in. Nisl, sem adipiscing
         risus pulvinar non sed nullam id integer. Integer quis porttitor mauris
         arcu, pretium orci quam. Enim cursus mattis nunc aliquam pharetra

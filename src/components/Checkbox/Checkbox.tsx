@@ -25,7 +25,7 @@ const Checkbox: FC<CheckboxProps> = ({ subLabel = "", label = "", name }) => {
           >
             {label}
           </label>
-          {subLabel && <p className="text-gray-500">{subLabel}</p>}
+          {subLabel && <p className="text-neutral-500">{subLabel}</p>}
         </div>
       )}
     </div>

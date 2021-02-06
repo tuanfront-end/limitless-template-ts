@@ -3,7 +3,7 @@ import React from "react";
 
 export const Alerts = () => {
   return (
-    <section className="grid lg:grid-cols-3">
+    <section className="">
       <div className="space-y-8">
         <h1 className="text-f2">Alert</h1>
         <Alert />
