@@ -9,11 +9,12 @@ import Cards from "./Cards";
 import Dropdowns from "./Dropdowns";
 import Forms from "./Forms";
 import Messages from "./Messages";
+import Typographys from "./Typographys";
 
 export const ComponentsPage: React.FC = () => {
   return (
     <div className="bg-white dark:bg-black">
-      <div className="container">
+      <div className="max-w-body mx-auto">
         <div className="space-y-8 md:space-y-9">
           {/* <Alerts /> */}
           {/* <Avatars /> */}
@@ -23,12 +24,11 @@ export const ComponentsPage: React.FC = () => {
           {/* <Messages /> */}
           {/* <Modal /> */}
           {/* <SearchInput /> */}
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          {/* <a href="http://" target="_blank" rel="noopener noreferrer">
             Hello my name tuan
           </a>
-          <div>
-            <Forms />
-          </div>
+          <Forms /> */}
+          <Typographys />
         </div>
       </div>
     </div>

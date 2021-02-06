@@ -7,7 +7,8 @@ import Footer from "components/Footer/Footer";
 import { ComponentsPage } from "containers/ComponentsPage/ComponentsPage";
 
 export const pages: Page[] = [
-  { path: "/", exact: true, component: ComponentsPage },
+  { path: "/", exact: true, component: HomePage },
+  { path: "/components", exact: true, component: ComponentsPage },
 ];
 
 const Routes = () => {

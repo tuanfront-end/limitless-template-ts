@@ -2,8 +2,8 @@ import { ComponentType } from "react";
 
 export interface LocationStates {
   "/"?: {};
+  "/components"?: {};
   "/detail"?: {};
-  "/detail2"?: {};
 }
 
 export type PathName = keyof LocationStates;

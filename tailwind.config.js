@@ -183,6 +183,13 @@ module.exports = {
         "link-medium": ["18px", "156%"],
         "link-large": ["14px", "143%"],
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme("colors.black"),
+          },
+        },
+      }),
     },
   },
   variants: {
