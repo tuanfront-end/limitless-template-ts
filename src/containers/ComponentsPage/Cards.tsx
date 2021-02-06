@@ -8,6 +8,7 @@ import React from "react";
 const Cards = () => {
   return (
     <div className="max-w-body space-y-8">
+      <h3 className="text-f2 dark:text-white">Cards</h3>
       <CardPersonSmall />
       <CardPerson />
       <CardVertical />

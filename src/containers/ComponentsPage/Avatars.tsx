@@ -4,7 +4,7 @@ import React from "react";
 export const Avatars = () => {
   return (
     <section className="space-y-8">
-      <h1 className="text-f2">Avatar</h1>
+      <h1 className="text-f2 dark:text-white">Avatar</h1>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="space-y-8 grid grid-cols-1">
           <Avatar />
@@ -13,27 +13,23 @@ export const Avatars = () => {
           <Avatar sizeClass="h-12 w-12" />
         </div>
         <div className="space-y-8">
-          <div className="flex -space-x-2 overflow-hidden">
-            <Avatar />
+          <div className="flex -space-x-2">
             <Avatar />
             <Avatar />
             <Avatar />
           </div>
-          <div className="flex -space-x-2 overflow-hidden">
-            <Avatar sizeClass="h-8 w-8" />
+          <div className="flex -space-x-2">
             <Avatar sizeClass="h-8 w-8" />
             <Avatar sizeClass="h-8 w-8" />
             <Avatar sizeClass="h-8 w-8" />
           </div>
 
-          <div className="flex -space-x-3 overflow-hidden">
-            <Avatar sizeClass="h-10 w-10" />
+          <div className="flex -space-x-3">
             <Avatar sizeClass="h-10 w-10" />
             <Avatar sizeClass="h-10 w-10" />
             <Avatar sizeClass="h-10 w-10" />
           </div>
-          <div className="flex -space-x-3 overflow-hidden">
-            <Avatar sizeClass="h-12 w-12" />
+          <div className="flex -space-x-3">
             <Avatar sizeClass="h-12 w-12" />
             <Avatar sizeClass="h-12 w-12" />
             <Avatar sizeClass="h-12 w-12" />
@@ -69,25 +65,25 @@ export const Avatars = () => {
         <div className="space-y-8 grid grid-cols-1">
           <div className="relative inline-flex items-center">
             <Avatar />
-            <span className="text-paragraph-tiny font-semibold ml-2 truncate">
+            <span className="text-paragraph-tiny font-semibold ml-2 truncate dark:text-white">
               Name Lastname
             </span>
           </div>
           <div className="relative inline-flex items-center">
             <Avatar sizeClass="h-8 w-8" />
-            <span className="text-paragraph-xs-small font-semibold ml-2 truncate">
+            <span className="text-paragraph-xs-small font-semibold ml-2 truncate dark:text-white">
               Name Lastname
             </span>
           </div>
           <div className="relative inline-flex items-center">
             <Avatar sizeClass="h-10 w-10" />
-            <span className="text-paragraph-small font-semibold ml-2 truncate">
+            <span className="text-paragraph-small font-semibold ml-2 truncate dark:text-white">
               Name Lastname
             </span>
           </div>
           <div className="relative inline-flex items-center">
             <Avatar sizeClass="h-12 w-12" />
-            <span className="text-paragraph-base font-semibold ml-2 truncate">
+            <span className="text-paragraph-base font-semibold ml-2 truncate dark:text-white">
               Name Lastname
             </span>
           </div>

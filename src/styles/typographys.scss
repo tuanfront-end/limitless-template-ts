@@ -2,20 +2,40 @@ body {
   @apply font-display;
 }
 
-// body,
-// p {
-//   line-height: 170%;
-// }
-
 a,
 label {
   @apply inline-block;
 }
 
 //
-#root .prose {
-  a {
-    transition: box-shadow 0.2s;
-    @apply text-black shadow-link-thin hover:text-primary hover:shadow-link-tick;
+body {
+  .prose {
+    a {
+      transition: box-shadow 0.2s;
+      @apply text-black shadow-link-thin hover:text-primary hover:shadow-link-tick;
+    }
+    blockquote {
+      border-left-color: theme("colors.primary");
+    }
+  }
+}
+// dark -- prose
+.dark {
+  .prose {
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    thead,
+    a code,
+    code,
+    [class~="lead"],
+    blockquote {
+      color: white;
+    }
   }
 }

@@ -22,11 +22,8 @@ export const ComponentsPage: React.FC = () => {
           <Cards />
           <Dropdowns />
           <Messages />
-          <Modal />
+          <Modal id="ttnc-modal-demo" />
           <SearchInput />
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            Hello my name tuan
-          </a>
           <Forms />
           <Typographys />
         </div>

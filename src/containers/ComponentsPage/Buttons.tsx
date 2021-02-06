@@ -367,7 +367,7 @@ export const Buttons = () => {
 
   return (
     <section className="space-y-8">
-      <h1 className="text-f2">Buttons</h1>
+      <h1 className="text-f2 dark:text-white">Buttons</h1>
       <div className="space-y-8">
         {_renderBorderLess()}
         {_renderRound()}

@@ -3,7 +3,8 @@ import React from "react";
 const Typographys = () => {
   return (
     <div>
-      <div className="prose prose-sm sm:prose lg:prose-lg mx-auto">
+      <div className="prose prose-sm sm:prose lg:prose-lg mx-auto dark:text-gray-100">
+        <h1 className="text-f2 dark:text-white">Typographys</h1>
         <p className="lead">
           Until now, trying to style an article, document, or blog post with
           Tailwind has been a tedious task that required a keen eye for
@@ -62,10 +63,7 @@ const Typographys = () => {
         <p>
           For more information about how to use the plugin and the features it
           includes,
-          <a
-            className="shadow-link-thin hover:shadow-link-tick"
-            href="https://github.com/tailwindcss/typography/blob/master/README.md"
-          >
+          <a href="https://github.com/tailwindcss/typography/blob/master/README.md">
             read the documentation
           </a>
           .

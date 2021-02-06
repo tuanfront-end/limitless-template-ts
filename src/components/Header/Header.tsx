@@ -5,7 +5,9 @@ import React from "react";
 export default function Header() {
   return (
     <div className="">
-      <SwithNightMode />
+      <div className="fixed text-right top-1/2 transform -translate-y-1/2 right-1 z-max">
+        <SwithNightMode />
+      </div>
       <div>
         <Annoucement />
       </div>

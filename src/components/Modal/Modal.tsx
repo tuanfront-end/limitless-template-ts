@@ -2,10 +2,20 @@ import Button from "components/Button/Button";
 import ButtonClose from "components/ButtonClose/ButtonClose";
 import React from "react";
 export interface ModalProps {
-  id?: string;
+  id: string;
+  renderButtonOpen?: React.ReactNode;
+  modalTitle?: string;
+  renderBody?: React.ReactNode;
+  renderFooter?: React.ReactNode;
 }
 
-const Modal: React.FC<ModalProps> = ({ id = "ttnc-modal-id" }) => {
+const Modal: React.FC<ModalProps> = ({
+  id,
+  renderButtonOpen,
+  renderFooter,
+  modalTitle = "Modal Title",
+  renderBody,
+}) => {
   const _renderHeader = () => {
     return (
       <div className="flex items-start justify-between px-6 py-4 pb-3 border-b border-solid border-neutral-700">
@@ -22,7 +32,11 @@ const Modal: React.FC<ModalProps> = ({ id = "ttnc-modal-id" }) => {
               clipRule="evenodd"
             />
           </svg>
-          <h3 className="text-f5 font-bold text-black truncate">Modal Title</h3>
+          {modalTitle && (
+            <h3 className="text-f5 font-bold text-black truncate">
+              {modalTitle}
+            </h3>
+          )}
         </div>
         <ButtonClose modalToggleId={id} />
       </div>
@@ -32,18 +46,23 @@ const Modal: React.FC<ModalProps> = ({ id = "ttnc-modal-id" }) => {
   const _renderBody = () => {
     return (
       <div className="relative p-6 flex-auto">
-        <p className="my-4 leading-relaxed">
-          I always felt like I could do anything. That’s the main thing people
-          are controlled by! Thoughts- their perception of themselves! They're
-          slowed down by their perception of themselves. If you're taught you
-          can’t do anything, you won’t do anything. I was taught I could do
-          everything.
-        </p>
+        {renderBody || (
+          <p className="my-4 leading-relaxed">
+            I always felt like I could do anything. That’s the main thing people
+            are controlled by! Thoughts- their perception of themselves! They're
+            slowed down by their perception of themselves. If you're taught you
+            can’t do anything, you won’t do anything. I was taught I could do
+            everything.
+          </p>
+        )}
       </div>
     );
   };
 
   const _renderFooter = () => {
+    if (renderFooter) {
+      return renderFooter;
+    }
     return (
       <div className="flex justify-end px-6 py-4 space-x-4 border-t border-solid border-neutral-700 rounded-b">
         <Button size="small" type="ghost" color="neutral" modalToggleId={id}>
@@ -57,14 +76,13 @@ const Modal: React.FC<ModalProps> = ({ id = "ttnc-modal-id" }) => {
   };
 
   const _renderButtonOpen = () => {
+    if (renderButtonOpen) {
+      return renderButtonOpen;
+    }
     return (
-      <button
-        className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-        type="button"
-        data-ttnc-modal-toggle={id}
-      >
+      <Button size="small" modalToggleId={id}>
         Open regular modal
-      </button>
+      </Button>
     );
   };
   return (
