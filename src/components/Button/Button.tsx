@@ -25,15 +25,15 @@ const Button: FC<ButtonProps> = ({
   switch (type) {
     case "filled":
       classes +=
-        " uppercase font-bold shadow-button hover:bg-opacity-90 disabled:bg-opacity-70";
+        " uppercase font-bold shadow-button hover:bg-opacity-95 disabled:bg-opacity-70";
       break;
     case "round":
       classes +=
-        " font-semibold shadow-button hover:bg-opacity-90 disabled:bg-opacity-70 rounded-full";
+        " font-semibold shadow-button hover:bg-opacity-95 disabled:bg-opacity-70 rounded-full";
       break;
     case "ghost":
       classes +=
-        " font-bold uppercase shadow-button hover:bg-opacity-90 disabled:opacity-70";
+        " font-bold uppercase shadow-button hover:bg-opacity-95 disabled:opacity-70";
       break;
     case "borderless":
       classes +=
@@ -45,10 +45,14 @@ const Button: FC<ButtonProps> = ({
 
   switch (size) {
     case "large":
-      classes += ` text-button-large ${isOnlyIcon ? "p-4" : "px-6 py-5"}`;
+      classes += ` text-button-small lg:text-button-large p-2 ${
+        isOnlyIcon ? "lg:p-4" : "lg:px-6 lg:py-5"
+      }`;
       break;
     case "medium":
-      classes += ` text-button-medium ${isOnlyIcon ? "p-3" : "px-5 py-4"}`;
+      classes += ` text-button-small lg:text-button-medium p-2 ${
+        isOnlyIcon ? "lg:p-3" : "lg:px-5 lg:py-4"
+      }`;
       break;
     case "small":
       classes += ` text-button-small ${isOnlyIcon ? "p-2" : "px-3 py-2"}`;
@@ -71,9 +75,9 @@ const Button: FC<ButtonProps> = ({
     if (type === "ghost") {
       switch (color) {
         case "primary":
-          return "text-primary border-primary border-2";
+          return "text-primary border-primary border-2 bg-white";
         case "secondary":
-          return "text-secondary border-secondary border-2";
+          return "text-secondary border-secondary border-2 bg-white";
         case "neutral":
           return "text-action-neutral border-action-neutral border-2";
         default:
@@ -97,7 +101,7 @@ const Button: FC<ButtonProps> = ({
   return (
     <button
       disabled={disabled}
-      className={`ttnc-button ${classes} inline-flex items-center justify-center text-center mb-2`}
+      className={`ttnc-button ${classes} inline-flex items-center justify-center text-center hover:shadow-none`}
       data-ttnc-modal-toggle={modalToggleId}
     >
       {children || `This Button`}

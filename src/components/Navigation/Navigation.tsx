@@ -89,7 +89,9 @@ function Navigation() {
                 role="menuitem"
               >
                 {i.name}
-                {i.children && <i className="ml-1 las la-angle-down"></i>}
+                {i.children && (
+                  <i className="ml-1 font-bold las la-angle-down"></i>
+                )}
               </Link>
               {i.children && _renderMenuChild(i, "left-full -top-4")}
             </div>
@@ -110,7 +112,9 @@ function Navigation() {
           to={item.link}
         >
           {item.name}
-          {item.children && <i className="ml-1 mb-1 las la-angle-down"></i>}
+          {item.children && (
+            <i className="ml-1 mb-1 font-bold las la-angle-down"></i>
+          )}
         </Link>
         {item.children && _renderMenuChild(item)}
       </div>
