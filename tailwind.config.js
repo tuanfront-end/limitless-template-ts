@@ -113,6 +113,7 @@ module.exports = {
           7: "0px 35px 90px rgba(0, 0, 0, 0.135)",
         },
         button: "4px 4px 0px #F1876F, 8px 8px 0px #F5AE9E",
+        drop: "2px 2px 0px #F1876F, 4px 4px 0px #F5AE9E",
         "link-thin": `inset 0 -3px 0 0 ${theme("colors.primary")}`,
         "link-tick": `inset 0 -6px 0 0 ${theme("colors.primary")}`,
       }),
@@ -181,9 +182,15 @@ module.exports = {
         "button-large": ["20px", "140%"],
         "button-medium": ["16px", "150%"],
         "button-small": ["14px", "143%"],
-        "link-large": ["18px", "178%"],
-        "link-medium": ["18px", "156%"],
-        "link-large": ["14px", "143%"],
+        "link-large": [
+          "18px",
+          {
+            lineHeight: "178%",
+            letterSpacing: "0.08em",
+          },
+        ],
+        "link-medium": ["16px", "156%"],
+        "link-small": ["14px", "143%"],
       },
       typography: (theme) => ({
         DEFAULT: {

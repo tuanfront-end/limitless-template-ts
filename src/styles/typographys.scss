@@ -2,6 +2,10 @@ body {
   @apply font-display;
 }
 
+a {
+  transition: all 0.2s;
+}
+
 a,
 label {
   @apply inline-block;
@@ -36,6 +40,25 @@ body {
     [class~="lead"],
     blockquote {
       color: white;
+    }
+  }
+}
+
+// ttnc-logo-img
+.ttnc-logo > img {
+  max-width: 200px;
+  max-height: 60px;
+}
+
+// Navigation
+// === Menu Navigation  === //
+.menu-item-has-children {
+  .sub-menu {
+    display: none;
+  }
+  &:hover {
+    > .sub-menu {
+      display: block;
     }
   }
 }

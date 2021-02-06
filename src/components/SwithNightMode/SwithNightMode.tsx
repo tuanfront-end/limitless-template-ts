@@ -4,19 +4,18 @@ function SwithNightMode() {
   return (
     <div>
       <button
-        id="wil-switch-night-mode"
+        id="ttnc-switch-night-mode"
         tabIndex={0}
-        className="flex items-center rounded-full border-2 border-neutral-200 py-1 px-1 flex-row dark:flex-row-reverse focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="flex items-center rounded-full border-2 border-primary py-1 px-1 flex-row dark:flex-row-reverse focus:outline-none focus:ring-1 focus:ring-primary"
       >
         <span className="sr-only">Enable dark mode</span>
-        <span className="bg-primary rounded-full w-8 h-8 flex items-center justify-center text-xl text-neutral-900">
-          <i id="wil-switch-night-mode-icon" className="lar"></i>
-        </span>
+        <span className="bg-primary rounded-full w-7 h-7"></span>
         <span
           id="wil-switch-night-mode-text"
-          className="text-neutral-900 dark:text-neutral-200 px-2 text-base"
+          className="text-gray-900 dark:text-gray-200 px-2 text-paragraph-base font-bold flex items-center justify-center"
         >
-          Dark
+          <i className="lar la-sun dark:hidden"></i>
+          <i className="lar la-moon hidden dark:block"></i>
         </span>
       </button>
     </div>

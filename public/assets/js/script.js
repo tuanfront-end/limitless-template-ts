@@ -40,17 +40,15 @@ const avatarColors = [
 
 function _toogleNightMode() {
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-  const switchN = document.querySelector("#wil-switch-night-mode");
+  const switchN = document.querySelector("#ttnc-switch-night-mode");
   const toDark = () => {
     document.querySelector("#root").classList.add("dark");
     if (!switchN) return;
-    document.querySelector("#wil-switch-night-mode-text").innerHTML = "Light";
     localStorage.theme = "dark";
   };
   const toLight = () => {
     document.querySelector("#root").classList.remove("dark");
     if (!switchN) return;
-    document.querySelector("#wil-switch-night-mode-text").innerHTML = "Dark";
     localStorage.theme = "light";
   };
 
