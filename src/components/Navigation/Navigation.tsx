@@ -85,7 +85,7 @@ function Navigation() {
             <div key={i.id} className="relative menu-item-has-children">
               <Link
                 to={i.link}
-                className="block px-4 py-2 hover:bg-gray-100 text-link-medium"
+                className="block px-4 py-3 hover:bg-gray-100 text-link-small uppercase font-semibold"
                 role="menuitem"
               >
                 {i.name}
@@ -108,7 +108,7 @@ function Navigation() {
     return (
       <div key={item.id} className="relative menu-item-has-children ">
         <Link
-          className={`${classN} inline-flex items-center py-2 px-4 text-link-medium font-semibold uppercase`}
+          className={`${classN} inline-flex items-center py-2 px-4 text-link-small xl:text-link-medium font-semibold uppercase`}
           to={item.link}
         >
           {item.name}

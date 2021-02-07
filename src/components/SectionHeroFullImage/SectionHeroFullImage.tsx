@@ -5,16 +5,16 @@ import React from "react";
 
 const SectionHeroFullImage = () => {
   return (
-    <section className="ttnc-SectionHeroFullImage relative min-h-screen bg-gray-300 text-center flex flex-col items-center justify-end">
+    <section className="ttnc-SectionHeroFullImage relative min-h-screen bg-gray-300 text-center flex flex-col items-center justify-center lg:pt-40">
       <div className="absolute inset-0 w-full h-full bg-black bg-opacity-40 z-10"></div>
       <img
         className="absolute inset-0 w-full h-full object-cover"
         src={_getImgHightQualityRd()}
         alt=""
       />
-      <div className="text-center flex flex-col items-center justify-end text-white space-y-4 py-8 lg:py-12 relative z-20">
+      <div className="text-center flex flex-col items-center justify-end text-white space-y-6 py-8 lg:py-12 relative z-20">
         <span className="uppercase text-small-caps font-bold">Limitless</span>
-        <h1 className="container mx-auto text-f2 lg:text-f1 xl:text-d-small font-bold">
+        <h1 className="max-w-screen-lg mx-auto px-4 text-f2 lg:text-f1 xl:text-d-small font-bold">
           Enabling emerging adults to adapt and succeed.
         </h1>
         <div className="flex flex-col justify-center md:flex-row space-y-4 md:space-y-0 md:space-x-9">

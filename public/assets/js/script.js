@@ -113,15 +113,15 @@ function _newGlideCarousel() {
       // autoplay: true,
       hoverpause: true,
       gap: 40,
-      perView: 1,
+      perView: 2,
       peek: { before: 300, after: 150 },
       breakpoints: {
         1024: {
-          perView: 1,
-          peek: { before: 200, after: 150 },
+          perView: 2,
+          peek: { before: 100, after: 50 },
           gap: 10,
         },
-        760: {
+        800: {
           perView: 1,
           peek: 40,
           gap: 10,

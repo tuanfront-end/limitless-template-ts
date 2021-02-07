@@ -3,50 +3,31 @@ import { _getImgHightQualityRd } from "contains/fakeData";
 import React from "react";
 
 const SectionImageCarousel = () => {
+  const _renderItem = () => {
+    return (
+      <li className="glide__slide h-full">
+        <img
+          className="h-full w-full object-cover"
+          src={_getImgHightQualityRd()}
+          alt=""
+        />
+      </li>
+    );
+  };
+
   return (
-    <div className="py-20">
-      <div className="glide-peek">
-        <div className="glide__track" data-glide-el="track">
-          <ul className="glide__slides">
-            <li className="glide__slide">
-              <div className="aspect-w-3 md:aspect-w-5 aspect-h-3 relative">
-                <img
-                  className="absolute inset-0 w-full h-full object-cover"
-                  src={_getImgHightQualityRd()}
-                  alt=""
-                />
-              </div>
-            </li>
-            <li className="glide__slide">
-              <div className="aspect-w-3 md:aspect-w-5 aspect-h-3 relative">
-                <img
-                  className="absolute inset-0 w-full h-full object-cover"
-                  src={_getImgHightQualityRd()}
-                  alt=""
-                />
-              </div>
-            </li>
-            <li className="glide__slide">
-              <div className="aspect-w-3 md:aspect-w-5 aspect-h-3 relative">
-                <img
-                  className="absolute inset-0 w-full h-full object-cover"
-                  src={_getImgHightQualityRd()}
-                  alt=""
-                />
-              </div>
-            </li>
-            <li className="glide__slide">
-              <div className="aspect-w-3 md:aspect-w-5 aspect-h-3 relative">
-                <img
-                  className="absolute inset-0 w-full h-full object-cover"
-                  src={_getImgHightQualityRd()}
-                  alt=""
-                />
-              </div>
-            </li>
+    <div className="ttnc-SectionImageCarousel h-screen my-10 py-10">
+      <div className="glide-peek h-full flex flex-col">
+        <div className="glide__track flex-grow" data-glide-el="track">
+          <ul className="glide__slides h-full">
+            {_renderItem()}
+            {_renderItem()}
+            {_renderItem()}
+            {_renderItem()}
+            {_renderItem()}
           </ul>
         </div>
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-center flex-shrink-0">
           <NextPrev />
         </div>
       </div>

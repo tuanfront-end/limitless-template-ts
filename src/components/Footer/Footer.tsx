@@ -1,34 +1,74 @@
 import React from "react";
 import Container from "components/Container/Container";
+import FooterWidgetNav from "components/FooterWidgetNav/FooterWidgetNav";
+import Logo from "components/Logo/Logo";
+import Input from "components/Input/Input";
+import Button from "components/Button/Button";
 
 export default function Footer() {
+  const _renderListSocial = () => {
+    const socials = [
+      "las la-envelope",
+      "lab la-facebook-f",
+      "lab la-youtube",
+      "lab la-instagram",
+      "lab la-twitter",
+    ];
+    return (
+      <ul className="flex items-center justify-start flex-wrap space-x-3">
+        {socials.map((item) => (
+          <li>
+            <a
+              className="p-2px text-f5 text-neutral-300 hover:text-primary hover:shadow-link-tick"
+              href="http://#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className={item}></i>
+            </a>
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
   return (
-    <footer className="wil-footer relative py-13 bg-cover">
-      <div className="absolute inset-0 bg-neutral-900 bg-opacity-90" />
-      <Container>
-        <div className="space-y-14 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 xl:gap-8">
-            <ul>
-              <li>Link 1</li>
-              <li>Link 1</li>
-              <li>Link 1</li>
-              <li>Link 1</li>
-              <li>Link 1</li>
-            </ul>
-          </div>
-          <ul className="text-base grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 xl:gap-8">
-            <li>Link 1</li>
-            <li>Link 1</li>
-            <li>Link 1</li>
-            <li>Link 1</li>
-            <li>Link 1</li>
-          </ul>
-          <div className="text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
-            facilis.
-          </div>
+    <footer className="ttnc-footer bg-white dark:bg-black pt-8">
+      <div className="container space-y-10">
+        <ul className="flex flex-wrap justify-between">
+          <li className="flex-shrink-0 w-full lg:w-auto space-y-6 mr-8 my-8">
+            <Logo />
+            {_renderListSocial()}
+          </li>
+          <li className="mr-8 my-4">
+            <FooterWidgetNav />
+          </li>
+          <li className="mr-8 my-4">
+            <FooterWidgetNav dataIndex={1} />
+          </li>
+          <li className="mr-8 my-4">
+            <FooterWidgetNav dataIndex={2} />
+          </li>
+          <li className="w-full max-w-xs lg:max-w-sm my-4">
+            <form action="#" method="post" className="grid grid-cols-1 gap-6">
+              <Input name="name" label="Name" />
+              <Input name="email" label="Email Address" type="email" />
+              <Button size="small">Subscribe</Button>
+            </form>
+          </li>
+        </ul>
+        <div className="text-center pb-4 text-paragraph-small text-neutral-300">
+          Copyright © 2021. Powered by TTNC-themes |{" "}
+          <a
+            className="shadow-link-thin hover:shadow-link-tick"
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Licensing
+          </a>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 }

@@ -4,8 +4,8 @@ import React from "react";
 
 const SectionSubscribe = () => {
   return (
-    <div className="container bg-white dark:bg-black py-10 md:py-20 grid grid-cols-1">
-      <h2 className="text-f3 sm:text-f2 text-primary font-bold mb-11 mx-auto">
+    <div className="ttnc-SectionSubscribe container py-20 grid grid-cols-1">
+      <h2 className="text-f2 text-primary font-bold mb-10 mx-auto">
         Say updated with the latest news!
       </h2>
       <form

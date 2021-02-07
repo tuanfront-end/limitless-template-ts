@@ -5,6 +5,7 @@ import { Page } from "./types";
 import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
 import { ComponentsPage } from "containers/ComponentsPage/ComponentsPage";
+import Annoucement from "components/Annoucement/Annoucement";
 
 export const pages: Page[] = [
   { path: "/", exact: true, component: HomePage },
@@ -14,8 +15,11 @@ export const pages: Page[] = [
 const Routes = () => {
   return (
     <BrowserRouter>
+      <Annoucement />
       {/* === HEADER... === */}
-      <Header />
+      <div className="stickyyyyy top-0 z-50">
+        <Header />
+      </div>
 
       {/* === PAGE CONTENT... === */}
       <Switch>

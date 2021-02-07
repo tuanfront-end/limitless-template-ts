@@ -2,22 +2,24 @@ import Button from "components/Button/Button";
 import { _getImgHightQualityRd } from "contains/fakeData";
 import React from "react";
 
-const SectionMisson = () => {
+export interface SectionMissionProps {}
+
+const SectionMission: React.FC<SectionMissionProps> = ({ children }) => {
   return (
-    <div className="ttnc-SectionMisson py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
-        <div className="relative aspect-w-3 aspect-h-4 md:aspect-none">
-          <img
-            className="absolute inset-0 w-full h-full object-cover"
-            src={_getImgHightQualityRd()}
-            alt=""
-          />
-        </div>
-        <div className="flex items-center justify-start">
-          <div className="max-w-screen-sm px-4 md:px-0 md:my-16 text-black dark:text-white space-y-6 lg:space-y-10">
-            <h1 className="text-f2 lg:text-f1 font-bold">
-              We exist for your success.
-            </h1>
+    <div className="ttnc-SectionMission min-h-screen grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 my-20">
+      <div className="relative aspect-w-3 aspect-h-3 md:aspect-none">
+        <img
+          className="absolute inset-0 w-full h-full object-cover"
+          src={_getImgHightQualityRd()}
+          alt=""
+        />
+      </div>
+      <div className="flex items-center justify-start">
+        <div className="max-w-screen-sm px-4 md:px-0 md:my-16 text-black dark:text-white space-y-6 lg:space-y-10">
+          <h1 className="text-f1 xl:text-d-small font-bold">
+            We exist for your success.
+          </h1>
+          {children || (
             <span className="block text-paragraph-small lg:text-paragraph-base font-semibold">
               Orci bibendum tellus eget risus. Habitasse lorem orci viverra sed
               sagittis, risus elementum. Nulla leo sed sed in quam. Posuere
@@ -38,12 +40,12 @@ const SectionMisson = () => {
               eget vulputate porttitor massa porttitor egestas donec. Id tellus
               parturient sit aliquam neque condimentum auctor.
             </span>
-            <Button size="large">our mission</Button>
-          </div>
+          )}
+          <Button size="large">our mission</Button>
         </div>
       </div>
     </div>
   );
 };
 
-export default SectionMisson;
+export default SectionMission;

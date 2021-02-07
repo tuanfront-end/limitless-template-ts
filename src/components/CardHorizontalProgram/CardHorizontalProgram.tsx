@@ -14,7 +14,7 @@ const CardHorizontalProgram: React.FC<CardHorizontalProgramProps> = ({
   const _renderFooter = () => {
     return (
       <div className="flex items-center justify-between space-x-4 mt-4">
-        <Button size="small">Small Button </Button>
+        <Button size="small">Details</Button>
         {enableFooterRight && (
           <div className="flex-shrink-0 flex items-center space-x-4">
             <IconLikeCard />
@@ -45,8 +45,8 @@ const CardHorizontalProgram: React.FC<CardHorizontalProgramProps> = ({
     <div className="ttnc-CardHorizontalProgram md:flex">
       {_renderImageFeatured()}
       <div className="px-6 overflow-hidden">
-        <h2 className="text-f4 md:text-f3 font-bold text-black dark:text-white mb-3 capitalize truncate">
-          <a href="//#endregion"> {title}</a>
+        <h2 className="text-f4 2xl:text-f3 font-bold text-black dark:text-white mb-3 capitalize truncate">
+          {title}
         </h2>
         <span className="text-paragraph-small font-normal text-neutral-200 dark:text-neutral-800 ttnc-line-clamp-4">
           Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed
