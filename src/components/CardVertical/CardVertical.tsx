@@ -28,9 +28,7 @@ const CardVertical = () => {
           interdum vel nisi, in enim sagittis at. Netus sagittis eleifend
           aliquet urna quis.
         </span>
-        <a href="//#endregion">
-          <Button size="small">Read now</Button>
-        </a>
+        <Button size="small">Read now</Button>
       </div>
     </div>
   );

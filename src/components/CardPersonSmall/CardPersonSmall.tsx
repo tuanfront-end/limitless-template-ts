@@ -11,7 +11,7 @@ const CardPersonSmall = () => {
         alt={name}
       />
       <div className="flex flex-col">
-        <span className="text-f4 font-bold text-black dark:text-white mb-1">
+        <span className="text-f5 md:text-f4 font-bold text-black dark:text-white mb-1">
           {name}
         </span>
         <span className="text-small-caps-medium uppercase text-neutral-200 dark:text-neutral-800">

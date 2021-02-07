@@ -21,7 +21,7 @@ const SectionHeroFullImage = () => {
           <Button type="ghost" size="medium">
             Donate
           </Button>
-          <Button size="medium">Get template</Button>
+          <Button size="medium">Get this template</Button>
         </div>
       </div>
 

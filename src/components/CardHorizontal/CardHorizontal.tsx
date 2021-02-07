@@ -66,7 +66,7 @@ const CardHorizontal: React.FC<CardHorizontalProps> = ({
         <h2 className="text-f5 font-bold text-black dark:text-white mb-3 capitalize">
           <a href="//#endregion"> {title}</a>
         </h2>
-        <span className="text-paragraph-small font-normal text-neutral-200 dark:text-neutral-800">
+        <span className="text-paragraph-small font-normal text-neutral-200 dark:text-neutral-800 ttnc-line-clamp-4">
           Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed
           quisque velit, auctor at lobortis hac tincidunt sodales id. Elit
           interdum vel nisi, in enim sagittis at. Netus sagittis eleifend

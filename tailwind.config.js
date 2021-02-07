@@ -214,6 +214,7 @@ module.exports = {
       backgroundColor: ["checked", "disabled"],
       textColor: ["disabled"],
       borderColor: ["checked", "disabled"],
+      borderWidth: ["hover", "focus"],
     },
   },
   plugins: [

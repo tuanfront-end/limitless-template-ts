@@ -8,6 +8,7 @@ export interface ButtonProps {
   disabled?: boolean;
   isOnlyIcon?: boolean;
   modalToggleId?: string;
+  url?: string;
 }
 
 const Button: FC<ButtonProps> = ({
@@ -17,6 +18,7 @@ const Button: FC<ButtonProps> = ({
   color = "primary",
   disabled = false,
   isOnlyIcon = false,
+  url = "//#endregion",
   children,
   modalToggleId,
 }) => {
@@ -97,6 +99,18 @@ const Button: FC<ButtonProps> = ({
   }
 
   classes += ` ${_getColorClass(type)}`;
+
+  if (!!url) {
+    return (
+      <a
+        href={url}
+        className={`ttnc-button ${classes} inline-flex items-center justify-center text-center hover:shadow-none`}
+        data-ttnc-modal-toggle={modalToggleId}
+      >
+        {children || `This Button`}
+      </a>
+    );
+  }
 
   return (
     <button

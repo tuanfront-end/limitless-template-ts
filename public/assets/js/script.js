@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
   _handleToggleDropdown();
   _toggleModal();
   _hiddenTopAnnoucement();
-  // _newGlideCarousel();
+  _newGlideCarousel();
   // _toogleWilModal();
   _setBgColorForAvatar();
   //
@@ -107,50 +107,33 @@ function _handleToggleDropdown() {
 }
 
 function _newGlideCarousel() {
-  const _toggleDisabledArrow = (
-    glide,
-    nextArrow,
-    prevArrow,
-    totalSlides,
-    controls
-  ) => () => {
-    if (nextArrow && prevArrow) {
-      if (glide._i && glide._i !== totalSlides - 1) {
-        nextArrow.removeAttribute("disabled");
-        prevArrow.removeAttribute("disabled");
-      }
-      if (!glide._i) {
-        prevArrow.setAttribute("disabled", true);
-      }
-      if (glide._i === totalSlides - 1) {
-        nextArrow.setAttribute("disabled", true);
-      }
-    }
-
-    if (!controls) {
-      controls = glide._c.Controls;
-      totalSlides = glide._c.Html.slides.length;
-      nextArrow = [...controls._c[0].children].filter(
-        (el) => el.getAttribute("data-glide-dir") === ">"
-      )[0];
-      prevArrow = [...controls._c[0].children].filter(
-        (el) => el.getAttribute("data-glide-dir") === "<"
-      )[0];
-    }
+  const _intantSlidePeek = (element) => {
+    const glide = new Glide(element, {
+      type: "carousel",
+      // autoplay: true,
+      hoverpause: true,
+      gap: 40,
+      perView: 1,
+      peek: { before: 300, after: 150 },
+      breakpoints: {
+        1024: {
+          perView: 1,
+          peek: { before: 200, after: 150 },
+          gap: 10,
+        },
+        760: {
+          perView: 1,
+          peek: 40,
+          gap: 10,
+        },
+      },
+    });
+    glide.mount();
   };
-
   const _intantSlide = (element) => {
     const glide = new Glide(element, {
-      rewind: false,
+      rewind: true,
     });
-    let controls = null;
-    let totalSlides = null;
-    let nextArrow = null;
-    let prevArrow = null;
-    glide.on(
-      ["mount.after", "run"],
-      _toggleDisabledArrow(glide, nextArrow, prevArrow, totalSlides, controls)
-    );
     glide.mount();
   };
   const _intantSlideFade = (element) => {
@@ -160,25 +143,20 @@ function _newGlideCarousel() {
       throttle: 1,
       rewind: true,
     });
-    let controls = null;
-    let totalSlides = null;
-    let nextArrow = null;
-    let prevArrow = null;
-
-    glide.on(
-      ["mount.after", "run"],
-      _toggleDisabledArrow(glide, nextArrow, prevArrow, totalSlides, controls)
-    );
     glide.mount();
   };
   setTimeout(() => {
-    const sliders = document.querySelectorAll(".glide");
-    const sliderFades = document.querySelectorAll(".glide-fade");
+    const sliders = [...document.querySelectorAll(".glide")];
+    const sliderFades = [...document.querySelectorAll(".glide-fade")];
+    const sliderPeeks = [...document.querySelectorAll(".glide-peek")];
     if (sliders) {
       sliders.forEach(_intantSlide);
     }
     if (sliderFades) {
       sliderFades.forEach(_intantSlideFade);
+    }
+    if (sliderPeeks) {
+      sliderPeeks.forEach(_intantSlidePeek);
     }
   }, 10);
 }

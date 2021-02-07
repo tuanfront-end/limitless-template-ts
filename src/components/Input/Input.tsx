@@ -1,15 +1,18 @@
-import React from "react";
+import React, { InputHTMLAttributes } from "react";
+import { Type } from "typescript";
 export interface InputProps {
   containerClassName?: string;
   placeholder?: string;
   label?: string;
   name: string;
+  type?: string;
 }
 const Input: React.FC<InputProps> = ({
   containerClassName = "",
   name,
   placeholder = "",
   label = "",
+  type = "text",
 }) => {
   return (
     <div className={containerClassName}>
@@ -23,7 +26,7 @@ const Input: React.FC<InputProps> = ({
       )}
       <div className="flex shadow-sm">
         <input
-          type="text"
+          type={type}
           name={name}
           className="focus:ring-action-primary focus:border-primary flex-1 block w-full sm:text-sm border-action-primary"
           placeholder={placeholder}

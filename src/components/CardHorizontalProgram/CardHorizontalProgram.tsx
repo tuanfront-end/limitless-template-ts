@@ -14,9 +14,7 @@ const CardHorizontalProgram: React.FC<CardHorizontalProgramProps> = ({
   const _renderFooter = () => {
     return (
       <div className="flex items-center justify-between space-x-4 mt-4">
-        <a href="#">
-          <Button size="small">Small Button </Button>
-        </a>
+        <Button size="small">Small Button </Button>
         {enableFooterRight && (
           <div className="flex-shrink-0 flex items-center space-x-4">
             <IconLikeCard />
@@ -32,13 +30,12 @@ const CardHorizontalProgram: React.FC<CardHorizontalProgramProps> = ({
     const img = _getImgRd();
 
     return (
-      <div className="flex-shrink-0">
-        <a href="//#endregion">
-          <img
-            className="rounded object-cover w-52 h-52"
-            src={img}
-            alt={title}
-          />
+      <div className="flex-shrink-0 mb-4 md:mb-0">
+        <a
+          className="block w-full md:w-52 aspect-w-4 aspect-h-3 sm:aspect-h-2 md:aspect-h-4"
+          href="//#endregion"
+        >
+          <img className="object-cover w-full" src={img} alt={title} />
         </a>
       </div>
     );
@@ -48,10 +45,10 @@ const CardHorizontalProgram: React.FC<CardHorizontalProgramProps> = ({
     <div className="ttnc-CardHorizontalProgram md:flex">
       {_renderImageFeatured()}
       <div className="px-6 overflow-hidden">
-        <h2 className="text-f3 font-bold text-black dark:text-white mb-3 capitalize truncate">
+        <h2 className="text-f4 md:text-f3 font-bold text-black dark:text-white mb-3 capitalize truncate">
           <a href="//#endregion"> {title}</a>
         </h2>
-        <span className="text-paragraph-small font-normal text-neutral-200 dark:text-neutral-800">
+        <span className="text-paragraph-small font-normal text-neutral-200 dark:text-neutral-800 ttnc-line-clamp-4">
           Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed
           quisque velit, auctor at lobortis hac tincidunt sodales id. Elit
           interdum vel nisi, in enim sagittis at. Netus sagittis eleifend

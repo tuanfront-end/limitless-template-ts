@@ -1,5 +1,5 @@
 body {
-  @apply font-display;
+  @apply font-display text-paragraph-base;
 }
 
 a,
@@ -12,6 +12,16 @@ label {
   @apply inline-block;
 }
 
+//
+.ttnc-title-underline {
+  @apply -mx-2 px-2;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(237, 96, 65, 0) 85.76%,
+    theme("colors.primary") 85.82%
+  );
+}
 //
 body {
   .prose {
