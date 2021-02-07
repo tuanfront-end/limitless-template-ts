@@ -1,5 +1,4 @@
-import React, { InputHTMLAttributes } from "react";
-import { Type } from "typescript";
+import React from "react";
 export interface InputProps {
   containerClassName?: string;
   placeholder?: string;
