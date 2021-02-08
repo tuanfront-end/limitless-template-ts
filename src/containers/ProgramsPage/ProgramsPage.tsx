@@ -1,5 +1,6 @@
 import CardHorizontalProgram from "components/CardHorizontalProgram/CardHorizontalProgram";
 import CardHorizontalProgram2 from "components/CardHorizontalProgram2/CardHorizontalProgram2";
+import SectionCTA from "components/SectionCTA/SectionCTA";
 import React from "react";
 
 const ProgramsPage = () => {
@@ -20,6 +21,7 @@ const ProgramsPage = () => {
           <CardHorizontalProgram2 isRight />
         </div>
       </div>
+      <SectionCTA />
     </div>
   );
 };
