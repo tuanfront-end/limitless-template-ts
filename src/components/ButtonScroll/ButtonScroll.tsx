@@ -1,7 +1,12 @@
 import React from "react";
 
-export interface ButtonScrollProps {}
-const ButtonScroll: React.FC<ButtonScrollProps> = ({ children = "Scroll" }) => {
+export interface ButtonScrollProps {
+  isUp?: boolean;
+}
+const ButtonScroll: React.FC<ButtonScrollProps> = ({
+  isUp = false,
+  children = "",
+}) => {
   const _renderVector = () => {
     return (
       <svg
@@ -72,14 +77,16 @@ const ButtonScroll: React.FC<ButtonScrollProps> = ({ children = "Scroll" }) => {
   };
 
   return (
-    <button className="relative text-primary flex items-center">
-      {_renderVector()}
+    <div className="relative text-primary flex items-center">
+      <span className={isUp ? "transform rotate-180" : ""}>
+        {_renderVector()}
+      </span>
       {children && (
         <span className="ml-3 text-paragraph-small font-semibold">
           {children}
         </span>
       )}
-    </button>
+    </div>
   );
 };
 

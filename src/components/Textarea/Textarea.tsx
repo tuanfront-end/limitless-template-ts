@@ -25,7 +25,7 @@ const Textarea: React.FC<TextareaProps> = ({
         <textarea
           id={name}
           name={name}
-          rows={3}
+          rows={4}
           className="shadow-sm focus:ring-action-primary focus:border-primary mt-1 block w-full sm:text-sm border-action-primary"
           placeholder={placeholder}
         ></textarea>

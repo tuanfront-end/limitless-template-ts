@@ -4,7 +4,7 @@ import React from "react";
 
 const SectionBgImage = () => {
   return (
-    <div className="ttnc-SectionBgImage min-h-screen flex items-center justify-center relative">
+    <div className="ttnc-SectionBgImage my-20 min-h-screen flex items-center justify-center relative">
       <img
         className="absolute inset-0 w-full h-full object-cover"
         src={_getImgHightQualityRd()}

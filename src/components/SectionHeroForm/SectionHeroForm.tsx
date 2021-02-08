@@ -4,18 +4,35 @@ import Textarea from "components/Textarea/Textarea";
 import { _getImgHightQualityRd } from "contains/fakeData";
 import React from "react";
 
-const SectionHeroForm = () => {
+export interface SectionHeroFormProps {
+  isRight?: boolean;
+  title?: string;
+  desc?: string;
+}
+
+const SectionHeroForm: React.FC<SectionHeroFormProps> = ({
+  isRight = false,
+  desc,
+  title = "Contact Us",
+}) => {
   return (
     <div className="ttc-SectionHeroForm">
       <div className="grid tnnc-grid-col-section-hero min-h-screen py-20">
-        <div className="col-start-1 col-end-4 lg:col-end-3 row-start-1 flex items-center justify-end z-10 p-8 lg:p-0">
+        <div
+          className={` row-start-1 flex items-center z-10 p-8 lg:p-0 ${
+            isRight
+              ? "col-start-1 lg:col-start-2 col-end-4 justify-start"
+              : "col-start-1 col-end-4 lg:col-end-3 justify-end"
+          }`}
+        >
           <div className="max-w-screen-lg p-8 md:p-20 lg:my-16 bg-white dark:bg-black grid grid-cols-1 gap-4">
             <h1 className="text-f2 lg:text-f1 font-bold text-black dark:text-white">
-              Contact Us
+              {title}
             </h1>
             <span className="text-paragraph-base font-bold text-black dark:text-white">
-              We'd love to get in touch with you! Send us a message below and
-              we'll contact you in the next 24 hours. Thanks!
+              {desc ||
+                `We'd love to get in touch with you! Send us a message below and
+              we'll contact you in the next 24 hours. Thanks!`}
             </span>
             <form method="POST" className="grid grid-cols-1 gap-3 mt-4">
               <Input name="name" placeholder="Jane Pollock" label="Name" />
@@ -36,7 +53,13 @@ const SectionHeroForm = () => {
             </form>
           </div>
         </div>
-        <div className="relative col-start-1 lg:col-start-2 col-end-4 row-start-1">
+        <div
+          className={`relative ${
+            isRight
+              ? "col-start-1 col-end-4 lg:col-end-3 row-start-1"
+              : "col-start-1 lg:col-start-2 col-end-4 row-start-1"
+          }`}
+        >
           <img
             className="absolute inset-0 w-full h-full object-cover"
             src={_getImgHightQualityRd()}
