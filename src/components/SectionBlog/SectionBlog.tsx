@@ -1,5 +1,4 @@
 import Button from "components/Button/Button";
-import CardPerson from "components/CardPerson/CardPerson";
 import CardVertical from "components/CardVertical/CardVertical";
 import React from "react";
 

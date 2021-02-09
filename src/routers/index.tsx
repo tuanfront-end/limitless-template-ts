@@ -16,6 +16,9 @@ import VolunteerPage from "containers/VolunteerPage/VolunteerPage";
 import EventsPage from "containers/EventsPage/EventsPage";
 import CareersPage from "containers/CareersPage/CareersPage";
 import ProgramsPage from "containers/ProgramsPage/ProgramsPage";
+import BlogPage from "containers/BlogPage/BlogPage";
+import BlogSinglePage from "containers/BlogSinglePage/BlogSinglePage";
+import DonatePage from "containers/DonatePage/DonatePage";
 
 export const pages: Page[] = [
   { path: "/", exact: true, component: HomePage },
@@ -29,6 +32,9 @@ export const pages: Page[] = [
   { path: "/events", exact: true, component: EventsPage },
   { path: "/careers", exact: true, component: CareersPage },
   { path: "/programs", exact: true, component: ProgramsPage },
+  { path: "/the-blog", exact: true, component: BlogPage },
+  { path: "/blog-single", exact: true, component: BlogSinglePage },
+  { path: "/donate", exact: true, component: DonatePage },
   { path: "/components", exact: true, component: ComponentsPage },
 ];
 

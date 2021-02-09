@@ -13,6 +13,9 @@ export interface LocationStates {
   "/events"?: {};
   "/careers"?: {};
   "/programs"?: {};
+  "/the-blog"?: {};
+  "/donate"?: {};
+  "/blog-single"?: {};
 }
 
 export type PathName = keyof LocationStates;
