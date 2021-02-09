@@ -7,67 +7,69 @@ import NavMobile from "./NavMobile";
 export interface NavItemType {
   id: number;
   name: string;
-  //   link: keyof LocationStates;
-  link: string;
+  link: keyof LocationStates | "#";
+  // link: string;
   children?: NavItemType[];
   isActive?: boolean;
 }
 const DATABASE: NavItemType[] = [
-  { id: 1, name: "Home", link: "/", isActive: true },
+  {
+    id: 1,
+    name: "Home",
+    link: "/",
+    isActive: true,
+    children: [
+      { id: 2, name: "Home 2", link: "/home2" },
+      { id: 1, name: "Home 1", link: "/", isActive: true },
+    ],
+  },
+
   {
     id: 11,
-    name: "search",
-    link: "/search",
+    name: "Style Guide",
+    link: "#",
     children: [
-      { id: 2, name: "search articles", link: "/search" },
-      { id: 20, name: "search categories", link: "/searchCategories" },
-      { id: 21, name: "search authors", link: "/searchAuthors" },
-      { id: 22, name: "search tags", link: "/searchTags" },
+      { id: 2, name: "Alerts", link: "/c-alerts" },
+      { id: 20, name: "Buttons", link: "/c-buttons" },
+      { id: 21, name: "Avatars", link: "/c-avatars" },
+      { id: 22, name: "Forms Layout", link: "/c-form-layout" },
+      { id: 22, name: "Messages", link: "/c-messages" },
+      { id: 22, name: "Dropdown - Modal", link: "/c-modal-dropdown" },
     ],
   },
   {
     id: 13,
-    name: "author",
-    link: "/author",
+    name: "About us",
+    link: "/our-story",
     children: [
-      { id: 3, name: "author articles", link: "/author" },
-      { id: 32, name: "author About", link: "/authorAbout" },
-      { id: 33, name: "author saved", link: "/authorSaved" },
-      { id: 34, name: "author follower", link: "/authorFollower" },
-      { id: 35, name: "author following", link: "/authorFollowing" },
+      { id: 3, name: "Our story", link: "/our-story" },
+      { id: 32, name: "Our mission", link: "/our-mission" },
+      { id: 33, name: "Our Team", link: "/our-team" },
+      { id: 34, name: "Contact Us", link: "/contact" },
     ],
   },
   {
     id: 14,
-    name: "detail",
-    link: "/detail",
+    name: "Getinvolved",
+    link: "#",
     children: [
-      { id: 2, name: "Detail 1", link: "/detail" },
-      { id: 20, name: "Detail 2", link: "/detail2" },
-      { id: 21, name: "Detail 3", link: "/detail3" },
+      { id: 2, name: "Volunteer", link: "/volunteer" },
+      { id: 20, name: "Events", link: "/events" },
+      { id: 21, name: "Programs", link: "/programs" },
+      { id: 21, name: "Careers", link: "/careers" },
     ],
   },
-];
-const DATA: NavItemType[] = [
-  ...DATABASE,
   {
-    id: 16,
-    name: "more",
-    link: "/",
+    id: 14,
+    name: "Blog",
+    link: "/the-blog",
     children: [
-      { id: 15, name: "404 page", link: "/404" as any },
-      {
-        id: 16,
-        name: "Level 2",
-        link: "/",
-        children: [
-          { id: 15, name: "404 page", link: "/404" as any },
-          { id: 16, name: "404 page", link: "/404" as any },
-        ],
-      },
+      { id: 21, name: "Blog", link: "/the-blog" },
+      { id: 21, name: "Blog Single", link: "/blog-single" },
     ],
   },
 ];
+const DATA: NavItemType[] = [...DATABASE];
 
 function Navigation() {
   const navMobileId = "ttnc-nav-mobbile";
@@ -82,7 +84,7 @@ function Navigation() {
           aria-labelledby="options-menu"
         >
           {item.children?.map((i) => (
-            <div key={i.id} className="relative menu-item-has-children">
+            <div key={i.link} className="relative menu-item-has-children">
               <Link
                 to={i.link}
                 className="block text-neutral-100 px-4 py-3 hover:bg-gray-100 text-link-small uppercase font-bold tracking-wider"
@@ -101,12 +103,12 @@ function Navigation() {
     );
   };
 
-  const _renderItem = (item: NavItemType) => {
+  const _renderItem = (item: NavItemType, index: number) => {
     const classN = item.isActive
       ? "text-primary"
       : "text-gray-900 dark:text-white";
     return (
-      <div key={item.id} className="relative menu-item-has-children ">
+      <div key={String(index)} className="relative menu-item-has-children ">
         <Link
           className={`${classN} inline-flex items-center py-2 px-4 text-link-small xl:text-link-medium font-bold uppercase tracking-wider`}
           to={item.link}

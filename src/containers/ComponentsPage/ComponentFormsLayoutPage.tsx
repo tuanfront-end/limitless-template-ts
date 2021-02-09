@@ -7,11 +7,11 @@ import Textarea from "components/Textarea/Textarea";
 import Upload from "components/Upload/Upload";
 import React from "react";
 
-const Forms = () => {
+const ComponentFormsLayoutPage = () => {
   return (
-    <div>
-      <div className="max-w-body mx-auto">
-        <h2 className="text-f3 font-bold text-black dark:text-white mb-2">
+    <div className="ttnc-ComponentFormsLayoutPage bg-white dark:bg-black">
+      <div className="py-20 px-4 max-w-body mx-auto space-y-8">
+        <h2 className="text-f2 font-bold text-black dark:text-white mb-2">
           Form Layout
         </h2>
         <form action="#" method="POST">
@@ -132,4 +132,4 @@ const Forms = () => {
   );
 };
 
-export default Forms;
+export default ComponentFormsLayoutPage;

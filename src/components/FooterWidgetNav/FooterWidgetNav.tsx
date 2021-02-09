@@ -14,7 +14,7 @@ const FooterWidgetNav: React.FC<FooterWidgetNavProps> = ({ dataIndex = 0 }) => {
 
   const _renderItem = (item: string) => {
     return (
-      <li>
+      <li key={item}>
         <a
           href="//#endregion"
           className="inline-block py-2 capitalize hover:shadow-link-tick hover:text-primary"

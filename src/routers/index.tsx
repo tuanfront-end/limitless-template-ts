@@ -19,6 +19,12 @@ import ProgramsPage from "containers/ProgramsPage/ProgramsPage";
 import BlogPage from "containers/BlogPage/BlogPage";
 import BlogSinglePage from "containers/BlogSinglePage/BlogSinglePage";
 import DonatePage from "containers/DonatePage/DonatePage";
+import ComponentAlertsPage from "containers/ComponentsPage/ComponentAlertsPage";
+import ComponentButtonPage from "containers/ComponentsPage/ComponentButtonsPage";
+import ComponentAvatarsPage from "containers/ComponentsPage/ComponentAvatarsPage";
+import ComponentFormsLayoutPage from "containers/ComponentsPage/ComponentFormsLayoutPage";
+import ComponentMessagesPage from "containers/ComponentsPage/ComponentMessagesPage";
+import ComponentModalDropdownsPage from "containers/ComponentsPage/ComponentModalDropdownsPage";
 
 export const pages: Page[] = [
   { path: "/", exact: true, component: HomePage },
@@ -35,7 +41,19 @@ export const pages: Page[] = [
   { path: "/the-blog", exact: true, component: BlogPage },
   { path: "/blog-single", exact: true, component: BlogSinglePage },
   { path: "/donate", exact: true, component: DonatePage },
+  { path: "/style-guide", exact: true, component: ComponentsPage },
   { path: "/components", exact: true, component: ComponentsPage },
+  //
+  { path: "/c-alerts", exact: true, component: ComponentAlertsPage },
+  { path: "/c-buttons", exact: true, component: ComponentButtonPage },
+  { path: "/c-avatars", exact: true, component: ComponentAvatarsPage },
+  { path: "/c-form-layout", exact: true, component: ComponentFormsLayoutPage },
+  { path: "/c-messages", exact: true, component: ComponentMessagesPage },
+  {
+    path: "/c-modal-dropdown",
+    exact: true,
+    component: ComponentModalDropdownsPage,
+  },
 ];
 
 const Routes = () => {

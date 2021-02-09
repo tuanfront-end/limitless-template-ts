@@ -77,7 +77,8 @@ function _toggleModal() {
   const btnToggle = [...document.querySelectorAll(`[data-ttnc-modal-toggle]`)];
   if (!btnToggle || !btnToggle.length) return;
   btnToggle.forEach((element) => {
-    element.addEventListener("click", function () {
+    element.addEventListener("click", function (event) {
+      event.preventDefault();
       const modalID = element.getAttribute("data-ttnc-modal-toggle");
       if (!modalID) return;
       document.getElementById(modalID).classList.toggle("hidden");
@@ -96,7 +97,8 @@ function _handleToggleDropdown() {
     const panel = element.nextElementSibling;
     const panelClass = panel.classList;
     if (!panel) return;
-    element.addEventListener("click", () => {
+    element.addEventListener("click", (event) => {
+      event.preventDefault();
       var popper = new Popper(element, panel, {
         placement: "bottom-start",
       });

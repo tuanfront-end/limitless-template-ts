@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "components/Container/Container";
 import FooterWidgetNav from "components/FooterWidgetNav/FooterWidgetNav";
 import Logo from "components/Logo/Logo";
 import Input from "components/Input/Input";

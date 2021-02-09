@@ -1,10 +1,10 @@
 import { Alert } from "components/Alert/Alert";
 import React from "react";
 
-export const Alerts = () => {
+const ComponentAlertsPage = () => {
   return (
-    <section className="">
-      <div className="space-y-8">
+    <section className="ttnc-ComponentAlertsPage bg-white dark:bg-black">
+      <div className="py-20 px-4 max-w-body mx-auto space-y-8">
         <h1 className="text-f2 dark:text-white">Alert</h1>
         <Alert />
         <Alert type="info" />
@@ -15,3 +15,5 @@ export const Alerts = () => {
     </section>
   );
 };
+
+export default ComponentAlertsPage;

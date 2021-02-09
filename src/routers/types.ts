@@ -15,7 +15,17 @@ export interface LocationStates {
   "/programs"?: {};
   "/the-blog"?: {};
   "/donate"?: {};
+  "/style-guide"?: {};
   "/blog-single"?: {};
+  //
+  "/c-alerts"?: {};
+  "/c-buttons"?: {};
+  "/c-avatars"?: {};
+  "/c-form-layout"?: {};
+  "/c-messages"?: {};
+  "/c-modal-dropdown"?: {};
+
+  //
 }
 
 export type PathName = keyof LocationStates;

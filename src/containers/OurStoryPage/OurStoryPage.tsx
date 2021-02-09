@@ -5,8 +5,10 @@ import React from "react";
 const OurStoryPage = () => {
   return (
     <div className="ttnc-OurStoryPage bg-white dark:bg-black">
-      <SectionMission />
-      <SectionCTA />
+      <div>
+        <SectionMission />
+        <SectionCTA />
+      </div>
     </div>
   );
 };
