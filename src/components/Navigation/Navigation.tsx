@@ -83,8 +83,11 @@ function Navigation() {
           aria-orientation="vertical"
           aria-labelledby="options-menu"
         >
-          {item.children?.map((i) => (
-            <div key={i.link} className="relative menu-item-has-children">
+          {item.children?.map((i, index) => (
+            <div
+              key={i.link + index}
+              className="relative menu-item-has-children"
+            >
               <Link
                 to={i.link}
                 className="block text-neutral-100 px-4 py-3 hover:bg-gray-100 text-link-small uppercase font-bold tracking-wider"
@@ -108,7 +111,10 @@ function Navigation() {
       ? "text-primary"
       : "text-gray-900 dark:text-white";
     return (
-      <div key={String(index)} className="relative menu-item-has-children ">
+      <div
+        key={String(index) + item.link}
+        className="relative menu-item-has-children "
+      >
         <Link
           className={`${classN} inline-flex items-center py-2 px-4 text-link-small xl:text-link-medium font-bold uppercase tracking-wider`}
           to={item.link}

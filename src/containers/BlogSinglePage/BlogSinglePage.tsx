@@ -11,7 +11,7 @@ const BlogSinglePage = () => {
         <PageHeader />
         <Typographys />
         <div className="space-y-16">
-          <h2 className="text-f2 font-semibold mt-8 text-center">
+          <h2 className="text-f2 font-semibold mt-8 text-center text-black dark:text-white">
             Related posts
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-10">

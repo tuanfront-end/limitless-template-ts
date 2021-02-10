@@ -17,7 +17,9 @@ const BlogPage = () => {
         isRight
       />
       <div className="container py-16 lg:py-20 space-y-20">
-        <h2 className="text-f1 font-bold mt-8 text-center">All posts</h2>
+        <h2 className="text-f1 font-bold mt-8 text-center text-black dark:text-white">
+          All posts
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-10">
           <CardVertical />
           <CardVertical />

@@ -14,9 +14,9 @@ const CardCareers = () => {
   };
 
   return (
-    <div className="ttnc-CardCareers relative py-10 pr-10 pl-24 bg-primary bg-opacity-10 dark:bg-neutral-100">
+    <div className="ttnc-CardCareers relative py-10 pr-10 pl-24 bg-primary bg-opacity-10 dark:bg-neutral-100 text-black dark:text-white">
       <div className="flex flex-col justify-start items-start space-y-4">
-        <h2 className="text-f3 lg:text-f2 font-semibold text-black dark:text-white capitalize">
+        <h2 className="text-f3 lg:text-f2 font-semibold capitalize">
           {_getTitleRd()}
         </h2>
         <div className="grid grid-cols-2 grid-rows-2 gap-x-4 gap-y-2">

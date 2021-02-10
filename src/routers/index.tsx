@@ -61,7 +61,7 @@ const Routes = () => {
     <BrowserRouter>
       <Annoucement />
       {/* === HEADER... === */}
-      <div className="stickyyyyy top-0 z-50">
+      <div className="sticky top-0 z-50">
         <Header />
       </div>
 

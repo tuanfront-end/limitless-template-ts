@@ -17,15 +17,14 @@ const PageHeader: React.FC<PageHeaderProps> = ({ isRight = true }) => {
     >
       <img
         className={`block object-cover flex-shrink-0 h-auto md:w-6/12 ${
-          isRight ? "md:pl-8 lg:pl-10" : "md:pr-8 lg:pr-10"
+          isRight ? "md:pl-8" : "md:pr-8"
         }`}
-        src="https://images.pexels.com/photos/6647971/pexels-photo-6647971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        // src={_getImgHightQualityRd()}
+        src="https://images.pexels.com/photos/5755613/pexels-photo-5755613.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         alt={title}
       />
       <div
         className={`flex items-start justify-center flex-col my-10 space-y-5 md:w-6/12 ${
-          isRight ? "md:pr-8 lg:pr-10" : "md:pl-8 lg:pl-10"
+          isRight ? "md:pr-8" : "md:pl-8"
         }`}
       >
         <span className="uppercase text-secondary tracking-wide">Story</span>

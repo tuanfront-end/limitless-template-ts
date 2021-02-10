@@ -16,19 +16,21 @@ const SectionImageCarousel = () => {
   };
 
   return (
-    <div className="ttnc-SectionImageCarousel h-screen my-10 py-10">
-      <div className="glide-peek h-full flex flex-col">
-        <div className="glide__track flex-grow" data-glide-el="track">
-          <ul className="glide__slides h-full">
-            {_renderItem()}
-            {_renderItem()}
-            {_renderItem()}
-            {_renderItem()}
-            {_renderItem()}
-          </ul>
-        </div>
-        <div className="mt-8 text-center flex-shrink-0">
-          <NextPrev />
+    <div className="ttnc-SectionImageCarousel overflow-hidden">
+      <div className="my-10 py-10 h-screen">
+        <div className="glide-peek h-full flex flex-col">
+          <div className="glide__track flex-grow" data-glide-el="track">
+            <ul className="glide__slides h-full">
+              {_renderItem()}
+              {_renderItem()}
+              {_renderItem()}
+              {_renderItem()}
+              {_renderItem()}
+            </ul>
+          </div>
+          <div className="mt-8 text-center flex-shrink-0">
+            <NextPrev />
+          </div>
         </div>
       </div>
     </div>

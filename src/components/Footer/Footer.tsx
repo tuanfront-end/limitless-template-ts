@@ -15,8 +15,8 @@ export default function Footer() {
     ];
     return (
       <ul className="flex items-center justify-start flex-wrap space-x-3">
-        {socials.map((item) => (
-          <li>
+        {socials.map((item, index) => (
+          <li key={String(index)}>
             <a
               className="p-2px text-f5 text-neutral-300 hover:text-primary hover:shadow-link-tick"
               href="http://#"

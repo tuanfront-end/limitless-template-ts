@@ -1,8 +1,4 @@
-import {
-  _getImgHightQualityRd,
-  _getImgRd,
-  _getTitleRd,
-} from "contains/fakeData";
+import { _getImgHightQualityRd, _getTitleRd } from "contains/fakeData";
 import React from "react";
 export interface CardHorizontalProgram2Props {
   isRight?: boolean;
@@ -41,7 +37,7 @@ const CardHorizontalProgram2: React.FC<CardHorizontalProgram2Props> = ({
         </span>
         <a
           className="block uppercase shadow-link-thin hover:shadow-link-tick text-black dark:text-white text-link-medium lg:text-link-large font-bold tracking-wider px-1"
-          href="//#endregion"
+          href="http://#"
         >
           Learn More
         </a>

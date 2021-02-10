@@ -10,7 +10,7 @@ const DropdownPanel: React.FC<DropdownPanelProps> = ({
 }) => {
   return (
     <div
-      className={`ttnc-dropdown__panel hidden w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 my-2 ${containerClassName}`}
+      className={`ttnc-dropdown__panel hidden w-56 shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 my-2 ${containerClassName}`}
       style={{ minWidth: "12rem" }}
     >
       {children}

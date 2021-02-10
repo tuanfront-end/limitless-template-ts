@@ -1,10 +1,11 @@
 import React from "react";
 import LogoImg from "Logo.png";
 import LogoLight from "LogoLight.png";
+import { Link } from "react-router-dom";
 
 const Logo: React.FC<{}> = ({}) => {
   return (
-    <a href="//#endregion" className="ttnc-logo block">
+    <Link to="/" className="ttnc-logo block">
       <img
         id="ttnc-logo-img"
         className="block dark:hidden"
@@ -17,7 +18,7 @@ const Logo: React.FC<{}> = ({}) => {
         src={LogoLight}
         alt="Logo Light"
       />
-    </a>
+    </Link>
   );
 };
 

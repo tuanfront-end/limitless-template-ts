@@ -20,7 +20,7 @@ const CardHorizontal: React.FC<CardHorizontalProps> = ({
   const _renderFooter = () => {
     return (
       <div className="flex items-center justify-between space-x-4 mt-6">
-        <a href="//#endregion">
+        <a href="http://#">
           <Button size="small">Small Button </Button>
         </a>
         {enableFooterRight && (
@@ -41,7 +41,7 @@ const CardHorizontal: React.FC<CardHorizontalProps> = ({
       <div
         className={`flex-shrink-0 ${imageSize === "small" ? "py-6 pl-6" : ""}`}
       >
-        <a href="//#endregion">
+        <a href="http://#">
           <img
             className={`rounded object-cover ${
               imageSize === "small" ? "w-20 h-20" : "w-40 h-40"
@@ -64,7 +64,7 @@ const CardHorizontal: React.FC<CardHorizontalProps> = ({
           </span>
         )}
         <h2 className="text-f5 font-bold text-black dark:text-white mb-3 capitalize">
-          <a href="//#endregion"> {title}</a>
+          <a href="http://#"> {title}</a>
         </h2>
         <span className="text-paragraph-small font-normal text-neutral-200 dark:text-neutral-800 ttnc-line-clamp-4">
           Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed

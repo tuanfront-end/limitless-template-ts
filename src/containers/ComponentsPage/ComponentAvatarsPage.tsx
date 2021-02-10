@@ -6,7 +6,7 @@ const ComponentAvatarsPage = () => {
     <div className="ttnc-ComponentAvatarsPage bg-white dark:bg-black">
       <div className="py-20 px-4 max-w-screen-md mx-auto space-y-20">
         <h1 className="text-f2 dark:text-white">Avatar</h1>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-14">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-4 gap-y-14">
           <div className="space-y-8 grid grid-cols-1">
             <Avatar />
             <Avatar sizeClass="h-8 w-8" />
@@ -63,7 +63,7 @@ const ComponentAvatarsPage = () => {
               </div>
             </div>
           </div>
-          <div className="space-y-8 grid grid-cols-1">
+          <div className="lg:col-span-2 space-y-8 grid grid-cols-1">
             <div className="relative inline-flex items-center">
               <Avatar />
               <span className="text-paragraph-tiny font-semibold ml-2 truncate dark:text-white">

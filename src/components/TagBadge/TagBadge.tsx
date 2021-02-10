@@ -10,7 +10,7 @@ const TagBadge: FC<TagBadgeProps> = ({
 }) => {
   return (
     <a
-      href="//#endregion"
+      href="http://#"
       className={`inline-block pt-2 pb-1 px-3 text-paragraph-tiny tracking-wider uppercase font-semibold rounded-full hover:opacity-95 ${containerClassName}`}
     >
       {_getTagNameRd()}
