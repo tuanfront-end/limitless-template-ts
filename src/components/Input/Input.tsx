@@ -25,6 +25,7 @@ const Input: React.FC<InputProps> = ({
       )}
       <div className="flex shadow-sm">
         <input
+          id={name}
           type={type}
           name={name}
           className="focus:ring-action-primary focus:border-primary flex-1 block w-full sm:text-sm border-action-primary"

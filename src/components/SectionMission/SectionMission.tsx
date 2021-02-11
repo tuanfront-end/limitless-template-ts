@@ -24,9 +24,9 @@ const SectionMission: React.FC<SectionMissionProps> = ({
         </div>
         <div className="flex items-center justify-start">
           <div className="max-w-screen-sm px-4 md:px-0 md:my-16 text-black dark:text-white space-y-6 lg:space-y-10">
-            <h1 className="text-f1 xl:text-d-small font-bold">
+            <h2 className="text-f1 xl:text-d-small font-bold">
               {title || _getTitleRd()}
-            </h1>
+            </h2>
             {children || (
               <span className="block text-paragraph-small lg:text-paragraph-base">
                 Orci bibendum tellus eget risus. Habitasse lorem orci viverra

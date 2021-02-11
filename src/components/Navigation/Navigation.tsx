@@ -77,12 +77,7 @@ function Navigation() {
   const _renderMenuChild = (item: NavItemType, className = "top-full") => {
     return (
       <div className={`sub-menu absolute py-3 px-2 z-50 w-60 ${className}`}>
-        <div
-          className="bg-white shadow-lg ring-1 ring-black ring-opacity-5 py-1"
-          role="menu"
-          aria-orientation="vertical"
-          aria-labelledby="options-menu"
-        >
+        <div className="bg-white shadow-lg ring-1 ring-black ring-opacity-5 py-1">
           {item.children?.map((i, index) => (
             <div
               key={i.link + index}
@@ -91,7 +86,6 @@ function Navigation() {
               <Link
                 to={i.link}
                 className="block text-neutral-100 px-4 py-3 hover:bg-gray-100 text-link-small uppercase font-bold tracking-wider"
-                role="menuitem"
               >
                 {i.name}
                 {i.children && (

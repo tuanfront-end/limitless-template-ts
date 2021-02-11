@@ -9,9 +9,9 @@ const SectionTextPhotoLightBox = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
         <div className="md:row-start-1 flex justify-end">
           <div className="max-w-screen-sm p-4 md:p-10 text-black dark:text-white space-y-6 lg:space-y-10">
-            <h1 className="text-f2 lg:text-f1 font-bold">
+            <h2 className="text-f2 lg:text-f1 font-bold">
               About <span className="text-primary">Warmbeat</span>
-            </h1>
+            </h2>
             <span className="block text-paragraph-small lg:text-paragraph-base font-semibold">
               Warmbeat is a budding non-profit based in Boise, ID founded by
               Abel Hancock in 2018.

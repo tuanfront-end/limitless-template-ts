@@ -26,25 +26,25 @@ const SectionHeroForm: React.FC<SectionHeroFormProps> = ({
           }`}
         >
           <div className="max-w-screen-lg p-8 md:p-20 lg:my-16 bg-white dark:bg-black grid grid-cols-1 gap-4">
-            <h1 className="text-f2 lg:text-f1 font-bold text-black dark:text-white">
+            <h2 className="text-f2 lg:text-f1 font-bold text-black dark:text-white">
               {title}
-            </h1>
+            </h2>
             <span className="text-paragraph-base font-bold text-black dark:text-white">
               {desc ||
                 `We'd love to get in touch with you! Send us a message below and
               we'll contact you in the next 24 hours. Thanks!`}
             </span>
             <form method="POST" className="grid grid-cols-1 gap-3 mt-4">
-              <Input name="name" placeholder="Jane Pollock" label="Name" />
+              <Input name="heroName" placeholder="Jane Pollock" label="Name" />
               <Input
-                name="email"
+                name="heroEmail"
                 type="email"
                 placeholder="jane@example.com"
                 label="Email Address"
               />
               <Textarea
                 placeholder="How can we help?"
-                name="message"
+                name="heroMessage"
                 label="Message"
               />
               <Button size="small" containerClassName="mt-2">

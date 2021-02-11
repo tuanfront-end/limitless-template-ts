@@ -4,7 +4,6 @@ window.addEventListener("load", function () {
   _toggleModal();
   _hiddenTopAnnoucement();
   _newGlideCarousel();
-  // _toogleWilModal();
   _setBgColorForAvatar();
   //
 });

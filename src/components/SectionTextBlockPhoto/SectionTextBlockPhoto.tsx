@@ -22,9 +22,9 @@ const SectionTextBlockPhoto = () => {
       <div className="grid tnnc-grid-col-section-hero min-h-screen py-20">
         <div className="col-start-1 col-end-4 lg:col-end-3 row-start-1 flex items-center justify-end z-10 p-8 lg:p-0">
           <div className="max-w-screen-lg p-8 md:p-20 lg:my-16 bg-white dark:bg-black space-y-8">
-            <h1 className="text-f2 lg:text-f1 xl:text-d-small font-bold text-black dark:text-white">
+            <h2 className="text-f2 lg:text-f1 xl:text-d-small font-bold text-black dark:text-white">
               About <span className="text-primary">Warmbeat</span>
-            </h1>
+            </h2>
             <div className="space-y-8 lg:space-y-10">
               {_renderTextBlock()}
               {_renderTextBlock()}

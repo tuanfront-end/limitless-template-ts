@@ -6,9 +6,9 @@ const SectionTeam = () => {
   return (
     <div className="container ttnc-SectionTeam py-20 lg:flex items-center">
       <div className="lg:w-5/12 mb-10 space-y-8 lg:mb-0 md:pr-14 text-black dark:text-white">
-        <h1 className="text-f1 font-bold">
+        <h2 className="text-f1 font-bold">
           Our <span className="ttnc-title-underline">Team</span>
-        </h1>
+        </h2>
         <span className="block text-paragraph-base">
           Tortor sit nisl purus nunc massa diam velit hac in. Nisl, sem
           adipiscing risus pulvinar non sed nullam id integer. Integer quis

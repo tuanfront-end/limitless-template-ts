@@ -14,13 +14,13 @@ const SectionSubscribe = () => {
       >
         <Input
           containerClassName="lg:w-96"
-          name="name"
+          name="subscribeName"
           placeholder="Jane Pollock"
           label="Name"
         />
         <Input
           containerClassName="lg:w-96 pb-2 md:pb-0"
-          name="email"
+          name="subscribeEmail"
           type="email"
           placeholder="jane@example.com"
           label="Email Address"

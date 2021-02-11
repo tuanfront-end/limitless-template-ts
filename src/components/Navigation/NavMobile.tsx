@@ -14,13 +14,16 @@ export interface NavMobileProps {
 const NavMobile: React.FC<NavMobileProps> = ({ id, data }) => {
   const _renderMenuChild = (item: NavItemType) => {
     return (
-      <div className="nav-mobile-sub-menu hidden px-3 z-50 w-60" id={item.link}>
+      <div
+        className="nav-mobile-sub-menu hidden px-3 z-50 w-60"
+        id={"ttnc-" + item.link + item.id}
+      >
         {item.children?.map((i, index) => (
           <div key={i.link + index} className="capitalize">
             <Link
               to={i.link}
               className="block px-4 py-2 text-link-medium text-gray-800 dark:text-gray-200"
-              data-ttnc-modal-toggle={item.link}
+              data-ttnc-modal-toggle={"ttnc-" + item.link + item.id}
             >
               {i.name}
               {i.children && <i className="ml-1 las la-angle-down"></i>}
@@ -41,7 +44,7 @@ const NavMobile: React.FC<NavMobileProps> = ({ id, data }) => {
         <Link
           className={`${classN} inline-flex items-center py-2 px-4 text-link-medium font-semibold uppercase`}
           to={item.link}
-          data-ttnc-modal-toggle={item.link}
+          data-ttnc-modal-toggle={"ttnc-" + item.link + item.id}
         >
           {item.name}
           {item.children && <i className="ml-1 mb-1 las la-angle-down"></i>}

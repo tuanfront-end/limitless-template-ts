@@ -4,9 +4,8 @@ function SwithNightMode() {
   return (
     <button
       data-switch-night-mode="default"
-      id="ttnc-switch-night-mode"
       tabIndex={0}
-      className="flex items-center rounded-full border-2 border-primary p-3px flex-row dark:flex-row-reverse focus:outline-none focus:ring-1 focus:ring-primary"
+      className="ttnc-switch-night-mode flex items-center rounded-full border-2 border-primary p-3px flex-row dark:flex-row-reverse focus:outline-none focus:ring-1 focus:ring-primary"
     >
       <span className="sr-only">Enable dark mode</span>
       <span className="bg-primary rounded-full w-6 h-6"></span>

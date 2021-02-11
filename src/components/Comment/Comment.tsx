@@ -51,41 +51,20 @@ const Comment: FC<CommentProps> = ({
               <i className="text-2xl las la-ellipsis-h leading-none"></i>
             </Dropdown.DropdownTrigger>
             <Dropdown.DropdownPanel containerClassName="w-40 overflow-hidden rounded-2.5xl">
-              <div
-                className="text-base text-neutral-700 py-2 leading-tight"
-                role="menu"
-                aria-orientation="vertical"
-                aria-labelledby="options-menu"
-              >
-                <a
-                  href="#@"
-                  className="block px-5 py-2 hover:bg-neutral-300 "
-                  role="menuitem"
-                >
+              <div className="text-base text-neutral-700 py-2 leading-tight">
+                <a href="#@" className="block px-5 py-2 hover:bg-neutral-300 ">
                   <i className="text-body leading-none mr-2 las la-edit"></i>
                   Edit
                 </a>
-                <a
-                  href="#@"
-                  className="block px-5 py-2 hover:bg-neutral-300 "
-                  role="menuitem"
-                >
+                <a href="#@" className="block px-5 py-2 hover:bg-neutral-300 ">
                   <i className="text-body leading-none mr-2 las la-reply"></i>
                   Reply
                 </a>
-                <a
-                  href="#@"
-                  className="block px-5 py-2 hover:bg-neutral-300 "
-                  role="menuitem"
-                >
+                <a href="#@" className="block px-5 py-2 hover:bg-neutral-300 ">
                   <i className="text-body leading-none mr-2 las la-flag"></i>
                   Report
                 </a>
-                <a
-                  href="#@"
-                  className="block px-5 py-2 hover:bg-neutral-300 "
-                  role="menuitem"
-                >
+                <a href="#@" className="block px-5 py-2 hover:bg-neutral-300 ">
                   <i className="text-body leading-none mr-2 las la-trash-alt"></i>
                   Delete
                 </a>

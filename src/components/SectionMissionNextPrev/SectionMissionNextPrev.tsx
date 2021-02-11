@@ -47,9 +47,9 @@ const SectionMissionNextPrev: React.FC<SectionMissionNextPrevProps> = ({
               {scrollUpText}
             </span>
           )}
-          <h1 className="text-f1 2xl:text-d-small font-bold">
+          <h2 className="text-f1 2xl:text-d-small font-bold">
             {title || _getTitleRd()}
-          </h1>
+          </h2>
           {children && (
             <span className="block text-paragraph-small lg:text-paragraph-base font-semibold">
               {children ||

@@ -13,9 +13,9 @@ const SectionHeroFullImage = () => {
       />
       <div className="text-center flex flex-col items-center justify-end text-white space-y-6 py-8 lg:py-12 relative z-20">
         <span className="uppercase text-small-caps font-bold">Warmbeat</span>
-        <h1 className="max-w-screen-lg mx-auto px-4 text-f2 lg:text-f1 xl:text-d-small font-bold">
+        <h2 className="max-w-screen-lg mx-auto px-4 text-f2 lg:text-f1 xl:text-d-small font-bold">
           Enabling emerging adults to adapt and succeed.
-        </h1>
+        </h2>
         <div className="flex flex-col justify-center md:flex-row space-y-4 md:space-y-0 md:space-x-9">
           <Button type="ghost" size="medium">
             Donate

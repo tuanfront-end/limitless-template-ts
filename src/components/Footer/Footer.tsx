@@ -50,8 +50,8 @@ export default function Footer() {
           </li>
           <li className="w-full max-w-xs lg:max-w-sm my-4">
             <form action="#" method="post" className="grid grid-cols-1 gap-6">
-              <Input name="name" label="Name" />
-              <Input name="email" label="Email Address" type="email" />
+              <Input name="footerName" label="Name" />
+              <Input name="footerEmail" label="Email Address" type="email" />
               <Button size="small">Subscribe</Button>
             </form>
           </li>
@@ -60,7 +60,7 @@ export default function Footer() {
           Copyright © 2021. Powered by TTNC-themes |{" "}
           <a
             className="shadow-link-thin hover:shadow-link-tick"
-            href="http://"
+            href="#root"
             target="_blank"
             rel="noopener noreferrer"
           >

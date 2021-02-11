@@ -27,9 +27,9 @@ const SectionHero: React.FC<SectionHeroProps> = ({
             <span className="uppercase text-small-caps font-bold text-primary">
               {subTitle || "Warmbeat"}
             </span>
-            <h1 className="text-f2 xl:text-f1 font-bold text-black dark:text-white">
+            <h2 className="text-f2 xl:text-f1 font-bold text-black dark:text-white">
               {title || "Enabling emerging adults to adapt and succeed."}
-            </h1>
+            </h2>
             {renderFooter || (
               <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-9">
                 <Button type="ghost" size="medium">
