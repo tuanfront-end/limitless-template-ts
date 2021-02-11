@@ -14,7 +14,7 @@ export default function HomePage() {
       <SectionHeroFullImage />
       <SectionTextSectionPhoto />
       <SectionProgram />
-      <SectionMission>
+      <SectionMission title="We exist for your success.">
         <span className="sr-only">Our mission</span>
       </SectionMission>
       <SectionSubscribe />

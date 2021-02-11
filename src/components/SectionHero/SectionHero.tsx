@@ -25,7 +25,7 @@ const SectionHero: React.FC<SectionHeroProps> = ({
         >
           <div className="max-w-screen-lg p-8 md:p-20 lg:my-16 bg-white dark:bg-black space-y-8">
             <span className="uppercase text-small-caps font-bold text-primary">
-              {subTitle || "Limitless"}
+              {subTitle || "Warmbeat"}
             </span>
             <h1 className="text-f2 xl:text-f1 font-bold text-black dark:text-white">
               {title || "Enabling emerging adults to adapt and succeed."}

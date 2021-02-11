@@ -12,7 +12,7 @@ const Annoucement = () => {
       </span>
       <a
         className="uppercase no-underline shadow-none text-xs lg:text-button-small text-white border-2 border-white py-2 px-3 hover:shadow-none hover:text-white hover:opacity-90"
-        href="http://#"
+        href="#root"
         target="_blank"
         rel="noopener noreferrer"
       >

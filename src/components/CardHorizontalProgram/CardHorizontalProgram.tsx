@@ -33,7 +33,7 @@ const CardHorizontalProgram: React.FC<CardHorizontalProgramProps> = ({
       <div className="flex-shrink-0 mb-4 md:mb-0">
         <a
           className="block w-full md:w-52 aspect-w-4 aspect-h-3 sm:aspect-h-2 md:aspect-h-4"
-          href="http://#"
+          href="#root"
         >
           <img className="object-cover w-full" src={img} alt={title} />
         </a>

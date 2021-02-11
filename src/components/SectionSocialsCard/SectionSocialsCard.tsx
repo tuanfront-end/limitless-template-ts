@@ -5,7 +5,7 @@ const SectionSocialsCard = () => {
     return (
       <div className="bg-white">
         <a
-          href="http://#"
+          href="#root"
           className="p-10 bg-primary bg-opacity-10 flex flex-col items-center justify-center transition-all shadow-link-thin hover:shadow-link-tick text-black hover:text-primary"
         >
           <i className={`${icon} text-f3 text-primary mb-2 p-2`}></i>

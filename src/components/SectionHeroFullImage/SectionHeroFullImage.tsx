@@ -1,5 +1,4 @@
 import Button from "components/Button/Button";
-import ButtonScroll from "components/ButtonScroll/ButtonScroll";
 import { _getImgHightQualityRd } from "contains/fakeData";
 import React from "react";
 
@@ -13,7 +12,7 @@ const SectionHeroFullImage = () => {
         alt=""
       />
       <div className="text-center flex flex-col items-center justify-end text-white space-y-6 py-8 lg:py-12 relative z-20">
-        <span className="uppercase text-small-caps font-bold">Limitless</span>
+        <span className="uppercase text-small-caps font-bold">Warmbeat</span>
         <h1 className="max-w-screen-lg mx-auto px-4 text-f2 lg:text-f1 xl:text-d-small font-bold">
           Enabling emerging adults to adapt and succeed.
         </h1>
@@ -24,10 +23,6 @@ const SectionHeroFullImage = () => {
           <Button size="medium">Get this template</Button>
         </div>
       </div>
-
-      <span className="hidden lg:block absolute z-20 bottom-12 left-12">
-        <ButtonScroll />
-      </span>
     </section>
   );
 };

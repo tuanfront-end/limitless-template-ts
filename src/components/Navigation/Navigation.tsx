@@ -19,57 +19,57 @@ const DATABASE: NavItemType[] = [
     link: "/",
     isActive: true,
     children: [
+      { id: 3, name: "Home 1", link: "/", isActive: true },
       { id: 2, name: "Home 2", link: "/home2" },
-      { id: 1, name: "Home 1", link: "/", isActive: true },
     ],
   },
 
   {
-    id: 11,
+    id: 4,
     name: "Style Guide",
     link: "#",
     children: [
-      { id: 2, name: "Alerts", link: "/c-alerts" },
-      { id: 20, name: "Buttons", link: "/c-buttons" },
-      { id: 21, name: "Avatars", link: "/c-avatars" },
-      { id: 22, name: "Forms Layout", link: "/c-form-layout" },
-      { id: 22, name: "Messages", link: "/c-messages" },
-      { id: 22, name: "Dropdown - Modal", link: "/c-modal-dropdown" },
+      { id: 5, name: "Alerts", link: "/c-alerts" },
+      { id: 6, name: "Buttons", link: "/c-buttons" },
+      { id: 7, name: "Avatars", link: "/c-avatars" },
+      { id: 8, name: "Forms Layout", link: "/c-form-layout" },
+      { id: 9, name: "Messages", link: "/c-messages" },
+      { id: 10, name: "Dropdown - Modal", link: "/c-modal-dropdown" },
     ],
   },
   {
-    id: 13,
+    id: 11,
     name: "About us",
     link: "/our-story",
     children: [
-      { id: 3, name: "Our story", link: "/our-story" },
-      { id: 32, name: "Our mission", link: "/our-mission" },
-      { id: 33, name: "Our Team", link: "/our-team" },
-      { id: 34, name: "Contact Us", link: "/contact" },
+      { id: 12, name: "Our story", link: "/our-story" },
+      { id: 13, name: "Our mission", link: "/our-mission" },
+      { id: 14, name: "Our Team", link: "/our-team" },
+      { id: 15, name: "Contact Us", link: "/contact" },
     ],
   },
   {
-    id: 14,
+    id: 16,
     name: "Getinvolved",
     link: "#",
     children: [
-      { id: 2, name: "Volunteer", link: "/volunteer" },
-      { id: 20, name: "Events", link: "/events" },
-      { id: 21, name: "Programs", link: "/programs" },
-      { id: 21, name: "Careers", link: "/careers" },
+      { id: 17, name: "Volunteer", link: "/volunteer" },
+      { id: 18, name: "Events", link: "/events" },
+      { id: 19, name: "Programs", link: "/programs" },
+      { id: 20, name: "Careers", link: "/careers" },
     ],
   },
   {
-    id: 14,
+    id: 21,
     name: "Blog",
     link: "/the-blog",
     children: [
-      { id: 21, name: "Blog", link: "/the-blog" },
-      { id: 21, name: "Blog Single", link: "/blog-single" },
+      { id: 22, name: "Blog", link: "/the-blog" },
+      { id: 23, name: "Blog Single", link: "/blog-single" },
     ],
   },
 ];
-const DATA: NavItemType[] = [...DATABASE];
+const DATA: NavItemType[] = DATABASE;
 
 function Navigation() {
   const navMobileId = "ttnc-nav-mobbile";

@@ -18,7 +18,7 @@ const Button: FC<ButtonProps> = ({
   color = "primary",
   disabled = false,
   isOnlyIcon = false,
-  url = "http://#",
+  url = "#root",
   children,
   modalToggleId,
 }) => {

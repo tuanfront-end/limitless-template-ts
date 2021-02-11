@@ -19,7 +19,7 @@ export default function Footer() {
           <li key={String(index)}>
             <a
               className="p-2px text-f5 text-neutral-300 hover:text-primary hover:shadow-link-tick"
-              href="http://#"
+              href="#root"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -10,13 +10,13 @@ const FooterWidgetNav: React.FC<FooterWidgetNavProps> = ({ dataIndex = 0 }) => {
     ["Volunteer", "Events", "Partners", "Careers"],
     ["Blog", "Careers", "Donate"],
   ];
-  const title = ["About Us", "Get Involved", "Limitless"];
+  const title = ["About Us", "Get Involved", "Warmbeat"];
 
   const _renderItem = (item: string) => {
     return (
       <li key={item}>
         <a
-          href="http://#"
+          href="#root"
           className="inline-block py-2 capitalize hover:shadow-link-tick hover:text-primary"
         >
           {item}

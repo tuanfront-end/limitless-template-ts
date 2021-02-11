@@ -42,7 +42,7 @@ const Comment: FC<CommentProps> = ({
           <span className="mr-10px  leading-none">20</span>
           <i className="las la-thumbs-down text-body  leading-none"></i>
           <span className="mr-5 leading-none">1</span>
-          <a href="##">Reply</a>
+          <a href="#root">Reply</a>
         </div>
 
         <div className="absolute right-0 top-0">

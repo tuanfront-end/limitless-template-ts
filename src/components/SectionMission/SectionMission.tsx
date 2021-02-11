@@ -28,7 +28,7 @@ const SectionMission: React.FC<SectionMissionProps> = ({
               {title || _getTitleRd()}
             </h1>
             {children || (
-              <span className="block text-paragraph-small lg:text-paragraph-base font-semibold">
+              <span className="block text-paragraph-small lg:text-paragraph-base">
                 Orci bibendum tellus eget risus. Habitasse lorem orci viverra
                 sed sagittis, risus elementum. Nulla leo sed sed in quam.
                 Posuere mauris nulla massa platea ornare dignissim eu. Tellus
@@ -36,18 +36,14 @@ const SectionMission: React.FC<SectionMissionProps> = ({
                 vel scelerisque feugiat in vel. Non, egestas justo, lacinia sem
                 facilisis eget semper. Arcu elementum tempor proin vitae sed.
                 Praesent sit dui augue tincidunt volutpat vulputate ligula.
+                <br /> <br />
                 Tellus aliquet suscipit senectus ipsum urna, nisl nunc ultricies
                 massa. Elementum, ornare massa quisque aenean consequat amet.
                 Diam enim, ac fermentum, ullamcorper id placerat ac, dictumst.
                 Suspendisse blandit posuere id pharetra, ultrices consectetur
                 enim ut. Nunc imperdiet at turpis sollicitudin vulputate velit.
                 Commodo augue dolor ornare purus lobortis dui. Nisl mollis
-                sodales porta vitae nulla pharetra amet, duis. Rhoncus tincidunt
-                sollicitudin et sed iaculis senectus ornare sagittis. Est leo
-                sed euismod id odio commodo consequat. Elit magna vitae
-                ullamcorper posuere sagittis, sed natoque. Eget eget vulputate
-                porttitor massa porttitor egestas donec. Id tellus parturient
-                sit aliquam neque condimentum auctor.
+                sodales porta vitae nulla pharetra amet, duis.
               </span>
             )}
             <Button size="large">our mission</Button>

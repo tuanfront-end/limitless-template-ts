@@ -23,7 +23,7 @@ const CardEvent = () => {
         </h2>
         <a
           className="uppercase shadow-link-thin hover:shadow-link-tick text-black dark:text-white text-link-medium lg:text-link-large font-bold tracking-wider px-1"
-          href="http://#"
+          href="#root"
         >
           Learn More
         </a>

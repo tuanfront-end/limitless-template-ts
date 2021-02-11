@@ -7,7 +7,7 @@ const CardVertical = () => {
   return (
     <div>
       <div className="relative aspect-w-4 aspect-h-3">
-        <a href="http://#">
+        <a href="#root">
           <img
             className="object-cover absolute inset-0 w-full h-full"
             src={_getImgRd()}
@@ -20,7 +20,7 @@ const CardVertical = () => {
           {_getTagNameRd()}
         </span>
         <h2 className="text-f5 text-black dark:text-white font-bold capitalize">
-          <a href="http://#">{title}</a>
+          <a href="#root">{title}</a>
         </h2>
         <span className="text-paragraph-small text-neutral-200 dark:text-neutral-800">
           Sagittis, eu pretium massa quisque cursus augue massa cursus. Sed

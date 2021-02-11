@@ -10,10 +10,10 @@ const SectionTextPhotoLightBox = () => {
         <div className="md:row-start-1 flex justify-end">
           <div className="max-w-screen-sm p-4 md:p-10 text-black dark:text-white space-y-6 lg:space-y-10">
             <h1 className="text-f2 lg:text-f1 font-bold">
-              About <span className="text-primary">Limitless</span>
+              About <span className="text-primary">Warmbeat</span>
             </h1>
             <span className="block text-paragraph-small lg:text-paragraph-base font-semibold">
-              Limitless is a budding non-profit based in Boise, ID founded by
+              Warmbeat is a budding non-profit based in Boise, ID founded by
               Abel Hancock in 2018.
               <br />
               <br />
@@ -24,7 +24,7 @@ const SectionTextPhotoLightBox = () => {
               After searching in vain for an organization or community to help
               emerging adults adapt to change and be successful he realized it
               was an ongoing need with no solution. It inspired him to found
-              Limitless – the non-profit organization with a mission to help
+              Warmbeat – the non-profit organization with a mission to help
               emerging adults.
             </span>
             <Button size="large">our mission</Button>

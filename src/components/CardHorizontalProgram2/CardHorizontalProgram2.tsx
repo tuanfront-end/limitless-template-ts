@@ -22,7 +22,7 @@ const CardHorizontalProgram2: React.FC<CardHorizontalProgram2Props> = ({
         alt={title}
       />
       <div
-        className={`flex items-start justify-center flex-col space-y-4 md:w-6/12 ${
+        className={`flex items-start justify-center flex-col space-y-4 md:py-32 lg:py-40 md:w-6/12 ${
           isRight ? "md:pr-8 lg:pr-10" : "md:pl-8 lg:pl-10"
         }`}
       >
@@ -37,7 +37,7 @@ const CardHorizontalProgram2: React.FC<CardHorizontalProgram2Props> = ({
         </span>
         <a
           className="block uppercase shadow-link-thin hover:shadow-link-tick text-black dark:text-white text-link-medium lg:text-link-large font-bold tracking-wider px-1"
-          href="http://#"
+          href="#root"
         >
           Learn More
         </a>

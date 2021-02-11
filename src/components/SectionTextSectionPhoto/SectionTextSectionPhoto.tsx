@@ -22,7 +22,7 @@ const SectionTextSectionPhoto = () => {
         <div className="col-start-1 col-end-4 lg:col-end-3 row-start-1 flex items-center justify-end z-10 p-8 lg:p-0">
           <div className="max-w-screen-lg p-8 md:p-20 lg:my-16 bg-white dark:bg-black space-y-8">
             <h1 className="text-f2 lg:text-f1 2xl:text-d-small font-bold text-black dark:text-white">
-              About <span className="text-primary">Limitless</span>
+              About <span className="text-primary">Warmbeat</span>
             </h1>
             {_renderTextBlock()}
             <Button size="medium">Get involved</Button>
