@@ -110,7 +110,7 @@ function Navigation() {
         className="relative menu-item-has-children "
       >
         <Link
-          className={`${classN} inline-flex items-center py-2 px-4 text-link-small xl:text-link-medium font-bold uppercase tracking-wider`}
+          className={`${classN} inline-flex items-center py-2 px-3 xl:px-4 text-link-small xl:text-link-medium font-bold uppercase tracking-wider`}
           to={item.link}
         >
           {item.name}
