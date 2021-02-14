@@ -2,7 +2,8 @@ window.addEventListener("load", function () {
   _toogleNightMode();
   _handleToggleDropdown();
   _toggleModal();
-  _hiddenTopAnnoucement();
+  // _hiddenTopAnnoucement();
+  _toggleHiddenClass();
   _newGlideCarousel();
   _setBgColorForAvatar();
   //
@@ -72,6 +73,21 @@ function _toogleNightMode() {
   });
 }
 
+function _toggleHiddenClass() {
+  const btnToggle = [...document.querySelectorAll(`[data-ttnc-hidden-toggle]`)];
+  if (!btnToggle || !btnToggle.length) return;
+  btnToggle.forEach((element) => {
+    element.addEventListener("click", function (event) {
+      event.preventDefault();
+      const panelHiddenId = element.getAttribute("data-ttnc-hidden-toggle");
+      if (!panelHiddenId) return;
+      const panelElement = document.getElementById(panelHiddenId);
+      if (!panelElement) return;
+      panelElement.classList.toggle("hidden");
+      panelElement.classList.toggle("block");
+    });
+  });
+}
 function _toggleModal() {
   const btnToggle = [...document.querySelectorAll(`[data-ttnc-modal-toggle]`)];
   if (!btnToggle || !btnToggle.length) return;
@@ -114,10 +130,10 @@ function _newGlideCarousel() {
       // autoplay: true,
       hoverpause: true,
       gap: 40,
-      perView: 2,
+      perView: 3,
       peek: { before: 300, after: 150 },
       breakpoints: {
-        1024: {
+        1400: {
           perView: 2,
           peek: { before: 100, after: 50 },
           gap: 10,

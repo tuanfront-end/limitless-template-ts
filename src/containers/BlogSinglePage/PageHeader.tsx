@@ -11,8 +11,8 @@ const PageHeader: React.FC<PageHeaderProps> = ({ isRight = true }) => {
   const title = _getTitleRd();
   return (
     <div
-      className={`md:flex space-y-10 md:space-y-0 py-20 ${
-        isRight ? "flex-row-reverse" : ""
+      className={`flex flex-col space-y-10 md:space-y-0 py-10 md:py-20 ${
+        isRight ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
       <img

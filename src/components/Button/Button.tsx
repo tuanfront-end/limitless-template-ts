@@ -47,7 +47,7 @@ const Button: FC<ButtonProps> = ({
 
   switch (size) {
     case "large":
-      classes += ` text-button-small lg:text-button-large p-2 ${
+      classes += ` text-button-small lg:text-button-large p-3 ${
         isOnlyIcon ? "lg:p-4" : "lg:px-6 lg:py-5"
       }`;
       break;

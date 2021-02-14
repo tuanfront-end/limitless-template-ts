@@ -7,7 +7,7 @@ import Typographys from "./Typographys";
 const BlogSinglePage = () => {
   return (
     <div className="ttnc-BlogPage bg-white dark:bg-black">
-      <div className="container space-y-20 mb-20">
+      <div className="container space-y-10 md:space-y-20 mb-20">
         <PageHeader />
         <Typographys />
         <div className="space-y-16">

@@ -13,13 +13,13 @@ const personNames = [
   "Kailey Greer",
   "Karli Costa",
   "Camren Barnes",
-  "Belinda Ritter",
-  "Jameson Dickerson",
+  "Belind Ritter",
+  "Jameson Dicker",
   "Giada Mann",
   "Evie Osborn",
-  "Juliet Mcpherson",
-  "Charlize Raymond",
-  "Amaris Pittman",
+  "Juliet Mcpher",
+  "Charlize Raymon",
+  "Amaris Pitt",
   "Arnav Morris",
   "Malakai Casey",
   "Nevaeh Henry",
@@ -27,13 +27,13 @@ const personNames = [
   "Anthony Wyatt",
   "Mike Orr",
   "Azul Hull",
-  "Derick Hubbard",
+  "Derick Hubb",
 ];
 
 const tagNames = [
-  "PRESS RELEASE",
-  "STORY",
-  "UPDATE",
+  "Press Release",
+  "Story",
+  "Update",
   "Events",
   "Programs",
   "Careers",
@@ -67,6 +67,15 @@ const imgHigtQualitys = [
   "https://images.pexels.com/photos/6140477/pexels-photo-6140477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   "https://images.pexels.com/photos/5304076/pexels-photo-5304076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   "https://images.pexels.com/photos/6140601/pexels-photo-6140601.jpeg?cs=srgb&dl=pexels-william-fortunato-6140601.jpg&fm=jpg",
+];
+
+const events = [
+  "Graphic Designer",
+  "Outreach Team",
+  "Tax Prep Specialist",
+  "Program Coordinator",
+  "Upcoming Event",
+  "Coats And Coffee!",
 ];
 
 const aTitles = [
@@ -135,9 +144,14 @@ function _getTagNameRd() {
 function _getAvatarRd() {
   return avatarImgs[Math.floor(Math.random() * avatarImgs.length)];
 }
+function _getRdEvents() {
+  return events[Math.floor(Math.random() * events.length)];
+}
 
 export {
+  imgHigtQualitys,
   avatarColors,
+  _getRdEvents,
   _getImgRd,
   _getTagNameRd,
   _getAvatarRd,

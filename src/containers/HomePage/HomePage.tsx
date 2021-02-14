@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <div className="ttnc-home-page bg-white dark:bg-black">
       <SectionHeroFullImage />
-      <SectionTextSectionPhoto />
+      <SectionTextSectionPhoto img="https://images.pexels.com/photos/3662773/pexels-photo-3662773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
       <SectionProgram />
       <SectionMission
         img="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"

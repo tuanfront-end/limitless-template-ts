@@ -3,15 +3,15 @@ import ButtonClose from "components/ButtonClose/ButtonClose";
 import Logo from "components/Logo/Logo";
 import SwithNightMode from "components/SwithNightMode/SwithNightMode";
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { NavItemType } from "./Navigation";
 
 export interface NavMobileProps {
-  id: string;
+  modalId: string;
   data: NavItemType[];
 }
 
-const NavMobile: React.FC<NavMobileProps> = ({ id, data }) => {
+const NavMobile: React.FC<NavMobileProps> = ({ modalId, data }) => {
   const _renderMenuChild = (item: NavItemType) => {
     return (
       <div
@@ -19,15 +19,23 @@ const NavMobile: React.FC<NavMobileProps> = ({ id, data }) => {
         id={"ttnc-" + item.link + item.id}
       >
         {item.children?.map((i, index) => (
-          <div key={i.link + index} className="capitalize">
-            <Link
+          <div
+            key={i.link + index}
+            className="capitalize text-gray-800 dark:text-gray-200"
+          >
+            <NavLink
+              exact
+              strict
               to={i.link}
-              className="block px-4 py-2 text-link-medium text-gray-800 dark:text-gray-200"
-              data-ttnc-modal-toggle={"ttnc-" + item.link + item.id}
+              className="block px-4 py-2 text-link-medium"
+              data-ttnc-hidden-toggle={
+                i.children ? "ttnc-" + i.link + i.id : undefined
+              }
+              activeClassName="text-primary"
             >
               {i.name}
               {i.children && <i className="ml-1 las la-angle-down"></i>}
-            </Link>
+            </NavLink>
             {i.children && _renderMenuChild(i)}
           </div>
         ))}
@@ -36,19 +44,19 @@ const NavMobile: React.FC<NavMobileProps> = ({ id, data }) => {
   };
 
   const _renderItem = (item: NavItemType, index: number) => {
-    const classN = item.isActive
-      ? "text-primary"
-      : "text-gray-900 dark:text-white";
     return (
-      <div key={item.link + index}>
-        <Link
-          className={`${classN} inline-flex items-center py-2 px-4 text-link-medium font-semibold uppercase`}
+      <div key={item.link + index} className="text-gray-900 dark:text-white">
+        <NavLink
+          exact
+          strict
+          className={`inline-flex items-center py-2 px-4 text-link-medium font-semibold uppercase`}
           to={item.link}
-          data-ttnc-modal-toggle={"ttnc-" + item.link + item.id}
+          data-ttnc-hidden-toggle={"ttnc-" + item.link + item.id}
+          activeClassName="text-primary"
         >
           {item.name}
           {item.children && <i className="ml-1 mb-1 las la-angle-down"></i>}
-        </Link>
+        </NavLink>
         {item.children && _renderMenuChild(item)}
       </div>
     );
@@ -57,11 +65,11 @@ const NavMobile: React.FC<NavMobileProps> = ({ id, data }) => {
   return (
     <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right">
       <div className="shadow-lg ring-1 ring-black ring-opacity-20 bg-white dark:bg-gray-800 divide-y-2 divide-gray-100">
-        <div className="py-6 px-5 flex items-center justify-between">
+        <div className="py-6 px-5 flex items-start justify-between">
           <Logo />
           <ButtonClose
             containerClassName="text-black dark:text-white"
-            modalToggleId={id}
+            modalToggleId={modalId}
           />
         </div>
         <nav className="flex flex-col items-start py-6 px-5 space-y-2">

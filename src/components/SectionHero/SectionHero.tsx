@@ -6,11 +6,13 @@ export interface SectionHeroProps {
   title?: string;
   subTitle?: string;
   isRight?: boolean;
+  img?: string;
 }
 const SectionHero: React.FC<SectionHeroProps> = ({
   renderFooter,
   title,
   subTitle,
+  img,
   isRight = false,
 }) => {
   return (
@@ -49,7 +51,7 @@ const SectionHero: React.FC<SectionHeroProps> = ({
         >
           <img
             className="absolute inset-0 w-full h-full object-cover"
-            src={_getImgHightQualityRd()}
+            src={img || _getImgHightQualityRd()}
             alt=""
           />
         </div>

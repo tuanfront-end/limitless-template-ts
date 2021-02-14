@@ -28,8 +28,8 @@ const SectionTeamWBio: React.FC<SectionTeamWBioProps> = ({
         </span>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
-        {Array.from(Array(authNumber).keys()).map(() => (
-          <CardPerson />
+        {Array.from(Array(authNumber).keys()).map((_, i) => (
+          <CardPerson key={String(i)} />
         ))}
       </div>
       {haveBtnShowAll && (

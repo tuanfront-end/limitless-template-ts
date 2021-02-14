@@ -10,7 +10,7 @@ import React from "react";
 const Home2Page = () => {
   return (
     <div className="ttnc-home2-page bg-white dark:bg-black">
-      <SectionHero />
+      <SectionHero img="https://images.pexels.com/photos/5999865/pexels-photo-5999865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
       <SectionProgram />
       <SectionBgImage />
       <SectionTeamWBio />

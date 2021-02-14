@@ -1,5 +1,5 @@
 import TagBadge from "components/TagBadge/TagBadge";
-import { _getTitleRd } from "contains/fakeData";
+import { _getRdEvents, _getTitleRd } from "contains/fakeData";
 import React from "react";
 
 const CardEvent = () => {
@@ -19,7 +19,7 @@ const CardEvent = () => {
       <div className="space-y-6">
         <TagBadge />
         <h2 className="text-f3 lg:text-f2 font-semibold text-black dark:text-white capitalize">
-          {_getTitleRd()}
+          {_getRdEvents()}
         </h2>
         <a
           className="uppercase shadow-link-thin hover:shadow-link-tick text-black dark:text-white text-link-medium lg:text-link-large font-bold tracking-wider px-1"

@@ -1,5 +1,5 @@
 import Button from "components/Button/Button";
-import { _getTitleRd } from "contains/fakeData";
+import { _getRdEvents, _getTitleRd } from "contains/fakeData";
 import React from "react";
 
 const CardCareers = () => {
@@ -17,9 +17,9 @@ const CardCareers = () => {
     <div className="ttnc-CardCareers relative py-10 pr-10 pl-24 bg-primary bg-opacity-10 dark:bg-neutral-100 text-black dark:text-white">
       <div className="flex flex-col justify-start items-start space-y-4">
         <h2 className="text-f3 lg:text-f2 font-semibold capitalize">
-          {_getTitleRd()}
+          {_getRdEvents()}
         </h2>
-        <div className="grid grid-cols-2 grid-rows-2 gap-x-4 gap-y-2">
+        <div className="grid grid-cols-2 grid-rows-2 gap-x-4 gap-y-2 text-paragraph-xs-small md:text-paragraph-base">
           <div className="opacity-70">Location:</div>
           <div className="opacity-70">Listed on:</div>
           <div>San Francisco</div>

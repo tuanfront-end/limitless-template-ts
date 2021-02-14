@@ -10,9 +10,6 @@ const EventsPage = () => {
         </h2>
         <CardEvent />
         <CardEvent />
-        <CardEvent />
-        <CardEvent />
-        <CardEvent />
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ const Annoucement = () => {
         learn more
       </a>
       <span
-        id="top-annoucement-close"
+        data-ttnc-hidden-toggle="top-annoucement"
         className="absolute top-1/2 transform -translate-y-2/4 right-4"
       >
         <ButtonClose containerClassName="text-white" />

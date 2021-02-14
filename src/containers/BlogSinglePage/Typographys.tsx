@@ -3,7 +3,7 @@ import React from "react";
 const Typographys = () => {
   return (
     <div className="prose prose-sm sm:prose lg:prose-lg mx-auto dark:text-gray-100">
-      <h1 className="text-f2 dark:text-white">
+      <h1 className="text-f4 md:text-f2 dark:text-white">
         Create a clean, unique, easy to use website!
       </h1>
       <p className="lead">

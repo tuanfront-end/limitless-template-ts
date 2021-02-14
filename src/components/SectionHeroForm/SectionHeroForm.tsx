@@ -8,12 +8,14 @@ export interface SectionHeroFormProps {
   isRight?: boolean;
   title?: string;
   desc?: string;
+  img?: string;
 }
 
 const SectionHeroForm: React.FC<SectionHeroFormProps> = ({
   isRight = false,
   desc,
   title = "Contact Us",
+  img,
 }) => {
   return (
     <div className="ttc-SectionHeroForm">
@@ -62,7 +64,7 @@ const SectionHeroForm: React.FC<SectionHeroFormProps> = ({
         >
           <img
             className="absolute inset-0 w-full h-full object-cover"
-            src={_getImgHightQualityRd()}
+            src={img || _getImgHightQualityRd()}
             alt=""
           />
         </div>
