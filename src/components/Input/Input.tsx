@@ -30,6 +30,7 @@ const Input: React.FC<InputProps> = ({
           name={name}
           className="focus:ring-action-primary focus:border-primary flex-1 block w-full sm:text-sm border-action-primary"
           placeholder={placeholder}
+          required
         />
       </div>
     </div>

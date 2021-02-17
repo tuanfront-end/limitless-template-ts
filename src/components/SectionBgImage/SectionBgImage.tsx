@@ -16,7 +16,7 @@ const SectionBgImage = () => {
         <h2 className="text-f1 lg:text-d-small font-bold text-white mb-10">
           We exist for your success.
         </h2>
-        <Button size="large" type="ghost">
+        <Button size="large" type="ghost" url="/our-mission">
           Our Mission
         </Button>
       </div>

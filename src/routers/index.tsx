@@ -25,6 +25,7 @@ import ComponentAvatarsPage from "containers/ComponentsPage/ComponentAvatarsPage
 import ComponentFormsLayoutPage from "containers/ComponentsPage/ComponentFormsLayoutPage";
 import ComponentMessagesPage from "containers/ComponentsPage/ComponentMessagesPage";
 import ComponentModalDropdownsPage from "containers/ComponentsPage/ComponentModalDropdownsPage";
+import Button from "components/Button/Button";
 
 export const pages: Page[] = [
   { path: "/", exact: true, component: HomePage },
@@ -61,7 +62,7 @@ const Routes = () => {
     <BrowserRouter>
       <Annoucement />
       {/* === HEADER... === */}
-      <div className="sticky top-0 z-50">
+      <div className="stickye top-0 z-50">
         <Header />
       </div>
 
@@ -77,6 +78,11 @@ const Routes = () => {
 
       {/* === FOOTER... === */}
       <Footer />
+      <span className="z-50 fixed bottom-4 right-4">
+        <a className="p-2 bg-primary text-white" href="#root">
+          Top
+        </a>
+      </span>
     </BrowserRouter>
   );
 };

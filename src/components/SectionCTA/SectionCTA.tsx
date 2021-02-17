@@ -9,10 +9,10 @@ const SectionCTA = () => {
           Ready to make a difference in the lives of emerging adults?
         </h2>
         <div className="flex justify-center space-x-4 md:space-x-10">
-          <Button size="medium" type="ghost">
+          <Button size="medium" type="ghost" url="/programs">
             Explore Programs
           </Button>
-          <Button size="medium" type="ghost">
+          <Button size="medium" type="ghost" url="/donate">
             Donate
           </Button>
         </div>

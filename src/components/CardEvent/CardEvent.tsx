@@ -1,6 +1,7 @@
 import TagBadge from "components/TagBadge/TagBadge";
 import { _getRdEvents, _getTitleRd } from "contains/fakeData";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CardEvent = () => {
   const _renderDateBox = () => {
@@ -21,12 +22,12 @@ const CardEvent = () => {
         <h2 className="text-f3 lg:text-f2 font-semibold text-black dark:text-white capitalize">
           {_getRdEvents()}
         </h2>
-        <a
+        <Link
           className="uppercase shadow-link-thin hover:shadow-link-tick text-black dark:text-white text-link-medium lg:text-link-large font-bold tracking-wider px-1"
-          href="#root"
+          to="/event-single"
         >
           Learn More
-        </a>
+        </Link>
       </div>
       {_renderDateBox()}
     </div>

@@ -25,7 +25,9 @@ const CardCareers = () => {
           <div>San Francisco</div>
           <div>11/1/2020</div>
         </div>
-        <Button size="small"> Learn More & Apply</Button>
+        <Button size="small" url="/career-single">
+          Learn More & Apply
+        </Button>
       </div>
       {_renderDateBox()}
     </div>

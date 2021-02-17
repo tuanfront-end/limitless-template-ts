@@ -123,6 +123,18 @@ const avatarColors = [
   "#E208A7",
 ];
 
+const facesHightQlt = [
+  "https://static.diverseui.com/male-82.jpg",
+  "https://static.diverseui.com/male-64.jpg",
+  "https://static.diverseui.com/male-65.jpg",
+  "https://static.diverseui.com/marvell.png",
+  "https://static.diverseui.com/female-81.jpg",
+  "https://static.diverseui.com/female-103.jpg",
+  "https://static.diverseui.com/abcdef.jpg",
+  "https://static.diverseui.com/female-2.jpg",
+  "https://static.diverseui.com/female-59.jpg",
+];
+
 function _getTitleRd() {
   return aTitles[Math.floor(Math.random() * aTitles.length)];
 }
@@ -149,8 +161,11 @@ function _getRdEvents() {
 }
 
 export {
+  facesHightQlt,
+  avatarImgs,
   imgHigtQualitys,
   avatarColors,
+  featuredImgs,
   _getRdEvents,
   _getImgRd,
   _getTagNameRd,

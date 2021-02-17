@@ -6,15 +6,19 @@ import { _getImgRd, _getTitleRd } from "contains/fakeData";
 import React from "react";
 export interface CardHorizontalProgramProps {
   enableFooterRight?: boolean;
+  imgSrc?: string;
 }
 const CardHorizontalProgram: React.FC<CardHorizontalProgramProps> = ({
   enableFooterRight = false,
+  imgSrc,
 }) => {
   const title = _getTitleRd();
   const _renderFooter = () => {
     return (
       <div className="flex items-center justify-between space-x-4 mt-4">
-        <Button size="small">Details</Button>
+        <Button size="small" url="/program-single">
+          Details
+        </Button>
         {enableFooterRight && (
           <div className="flex-shrink-0 flex items-center space-x-4">
             <IconLikeCard />
@@ -27,7 +31,7 @@ const CardHorizontalProgram: React.FC<CardHorizontalProgramProps> = ({
   };
 
   const _renderImageFeatured = () => {
-    const img = _getImgRd();
+    const img = imgSrc || _getImgRd();
 
     return (
       <div className="flex-shrink-0 mb-4 md:mb-0">

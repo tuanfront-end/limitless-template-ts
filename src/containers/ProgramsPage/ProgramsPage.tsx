@@ -1,6 +1,7 @@
 import CardHorizontalProgram from "components/CardHorizontalProgram/CardHorizontalProgram";
 import CardHorizontalProgram2 from "components/CardHorizontalProgram2/CardHorizontalProgram2";
 import SectionCTA from "components/SectionCTA/SectionCTA";
+import { imgHigtQualitys } from "contains/fakeData";
 import React from "react";
 
 const ProgramsPage = () => {
@@ -11,14 +12,14 @@ const ProgramsPage = () => {
           All <span className="ttnc-title-underline">Programs</span>
         </h2>
         <div className="space-y-10 lg:-space-y-10">
-          <CardHorizontalProgram2 />
-          <CardHorizontalProgram2 isRight />
-          <CardHorizontalProgram2 />
-          <CardHorizontalProgram2 isRight />
-          <CardHorizontalProgram2 />
-          <CardHorizontalProgram2 isRight />
-          <CardHorizontalProgram2 />
-          <CardHorizontalProgram2 isRight />
+          <CardHorizontalProgram2 isRight img={imgHigtQualitys[7]} />
+          <CardHorizontalProgram2 img={imgHigtQualitys[6]} />
+          <CardHorizontalProgram2 isRight img={imgHigtQualitys[5]} />
+          <CardHorizontalProgram2 img={imgHigtQualitys[4]} />
+          <CardHorizontalProgram2 isRight img={imgHigtQualitys[3]} />
+          <CardHorizontalProgram2 img={imgHigtQualitys[2]} />
+          <CardHorizontalProgram2 isRight img={imgHigtQualitys[1]} />
+          <CardHorizontalProgram2 img={imgHigtQualitys[0]} />
         </div>
       </div>
       <SectionCTA />

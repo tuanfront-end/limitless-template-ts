@@ -114,8 +114,10 @@ function _handleToggleDropdown() {
     if (!panel) return;
     element.addEventListener("click", (event) => {
       event.preventDefault();
+      const placement = panel.getAttribute("data-popper-placement");
+
       var popper = new Popper(element, panel, {
-        placement: "bottom-start",
+        placement: placement || "bottom-start",
       });
       panelClass.toggle("hidden");
       panelClass.toggle("block");

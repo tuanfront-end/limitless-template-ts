@@ -1,5 +1,5 @@
 import Button from "components/Button/Button";
-import { _getImgHightQualityRd } from "contains/fakeData";
+import { imgHigtQualitys, _getImgHightQualityRd } from "contains/fakeData";
 import React from "react";
 
 const DonatePage = () => {
@@ -7,7 +7,7 @@ const DonatePage = () => {
     <div className="ttnc-DonatePage bg-white dark:bg-black">
       <div className="container text-center my-20">
         <h1 className="text-f1 xl:text-d-small font-bold mb-20">
-          3 way to donate to our
+          3 way to donate to Warnbeat
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-16">
           <div className="flex flex-col items-center justify-between space-y-8">
@@ -32,7 +32,7 @@ const DonatePage = () => {
             <h2 className="text-f2 font-semibold shadow-link-tick">By Mail</h2>
             <span>Send a donation by mail.</span>
             <span className="text-neutral-300 italic font-normal">
-              <span className="text-black block">Limitless Donations</span> ‍123
+              <span className="text-black block">Warmbeat Donations</span> ‍123
               S East Street <br /> San Francisco, CA 90900
             </span>
           </div>
@@ -42,42 +42,42 @@ const DonatePage = () => {
         <div className="aspect-w-4 aspect-h-3">
           <img
             className="w-full h-full object-cover"
-            src={_getImgHightQualityRd()}
+            src={imgHigtQualitys[6]}
             alt=""
           />
         </div>
         <div className="aspect-w-4 aspect-h-3">
           <img
             className="w-full h-full object-cover"
-            src={_getImgHightQualityRd()}
+            src={imgHigtQualitys[5]}
             alt=""
           />
         </div>
         <div className="aspect-w-4 aspect-h-3">
           <img
             className="w-full h-full object-cover"
-            src={_getImgHightQualityRd()}
+            src={imgHigtQualitys[4]}
             alt=""
           />
         </div>
         <div className="aspect-w-4 aspect-h-3">
           <img
             className="w-full h-full object-cover"
-            src={_getImgHightQualityRd()}
+            src={imgHigtQualitys[3]}
             alt=""
           />
         </div>
         <div className="aspect-w-4 aspect-h-3">
           <img
             className="w-full h-full object-cover"
-            src={_getImgHightQualityRd()}
+            src={imgHigtQualitys[2]}
             alt=""
           />
         </div>
         <div className="aspect-w-4 aspect-h-3">
           <img
             className="w-full h-full object-cover"
-            src={_getImgHightQualityRd()}
+            src={imgHigtQualitys[1]}
             alt=""
           />
         </div>

@@ -352,7 +352,6 @@ const Typographys = () => {
         copy. What are we supposed to do with an <code>h5</code>, make it{" "}
         <em>smaller</em> than the body copy? No thanks.
       </p>
-      <hr />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import Button from "components/Button/Button";
 import CardPersonSmall from "components/CardPersonSmall/CardPersonSmall";
+import { avatarImgs } from "contains/fakeData";
 import React from "react";
 
 const SectionTeam = () => {
@@ -10,20 +11,22 @@ const SectionTeam = () => {
           Our <span className="ttnc-title-underline">Team</span>
         </h2>
         <span className="block text-paragraph-base">
-          Tortor sit nisl purus nunc massa diam velit hac in. Nisl, sem
-          adipiscing risus pulvinar non sed nullam id integer. Integer quis
-          porttitor mauris arcu, pretium orci quam. Enim cursus mattis nunc
-          aliquam pharetra feugiat ante sollicitudin.
+          We are here for your success! We are a small team of passionate
+          individuals ready to help you become the best you can be! We've been
+          there before, moving from teen years to young adults is difficult. We
+          want to make it easy.
         </span>
-        <Button size="medium">All Team Member</Button>
+        <Button size="medium" url="/our-team">
+          All Team Member
+        </Button>
       </div>
       <div className="lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-10">
-        <CardPersonSmall />
-        <CardPersonSmall />
-        <CardPersonSmall />
-        <CardPersonSmall />
-        <CardPersonSmall />
-        <CardPersonSmall />
+        <CardPersonSmall img={avatarImgs[0]} />
+        <CardPersonSmall img={avatarImgs[1]} />
+        <CardPersonSmall img={avatarImgs[2]} />
+        <CardPersonSmall img={avatarImgs[3]} />
+        <CardPersonSmall img={avatarImgs[4]} />
+        <CardPersonSmall img={avatarImgs[5]} />
       </div>
     </div>
   );

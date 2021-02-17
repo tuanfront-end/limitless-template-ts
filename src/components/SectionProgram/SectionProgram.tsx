@@ -1,4 +1,5 @@
 import CardHorizontalProgram from "components/CardHorizontalProgram/CardHorizontalProgram";
+import { featuredImgs } from "contains/fakeData";
 import React from "react";
 
 const SectionProgram = () => {
@@ -15,11 +16,11 @@ const SectionProgram = () => {
           aliquam pharetra feugiat ante sollicitudin.
         </span>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <CardHorizontalProgram />
-        <CardHorizontalProgram />
-        <CardHorizontalProgram />
-        <CardHorizontalProgram />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-16">
+        <CardHorizontalProgram imgSrc={featuredImgs[0]} />
+        <CardHorizontalProgram imgSrc={featuredImgs[1]} />
+        <CardHorizontalProgram imgSrc={featuredImgs[2]} />
+        <CardHorizontalProgram imgSrc={featuredImgs[3]} />
       </div>
     </div>
   );

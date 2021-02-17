@@ -34,10 +34,12 @@ const SectionHero: React.FC<SectionHeroProps> = ({
             </h2>
             {renderFooter || (
               <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-9">
-                <Button type="ghost" size="medium">
+                <Button type="ghost" size="medium" url="/donate">
                   Donate
                 </Button>
-                <Button size="medium">Get this template</Button>
+                <Button size="medium" url="#root">
+                  Get this template
+                </Button>
               </div>
             )}
           </div>

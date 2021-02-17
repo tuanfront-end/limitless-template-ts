@@ -31,7 +31,9 @@ const PageHeader: React.FC<PageHeaderProps> = ({ isRight = true }) => {
         <h2 className="text-f3 lg:text-f2 font-bold text-black dark:text-white capitalize">
           {title}
         </h2>
-        <span className="font-light">By {_getPersonNameRd()}</span>
+        <span className="font-light">
+          By {_getPersonNameRd()} • 25th November, 2020
+        </span>
       </div>
     </div>
   );

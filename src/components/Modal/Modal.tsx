@@ -80,7 +80,7 @@ const Modal: React.FC<ModalProps> = ({
       return renderButtonOpen;
     }
     return (
-      <Button url="" size="small" modalToggleId={id}>
+      <Button size="small" modalToggleId={id}>
         Open regular modal
       </Button>
     );

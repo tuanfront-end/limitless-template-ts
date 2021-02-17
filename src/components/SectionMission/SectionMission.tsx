@@ -46,7 +46,9 @@ const SectionMission: React.FC<SectionMissionProps> = ({
                 sodales porta vitae nulla pharetra amet, duis.
               </span>
             )}
-            <Button size="large">our mission</Button>
+            <Button size="large" url="/our-mission">
+              our mission
+            </Button>
           </div>
         </div>
       </div>

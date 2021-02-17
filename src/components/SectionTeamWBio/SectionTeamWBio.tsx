@@ -1,5 +1,6 @@
 import Button from "components/Button/Button";
 import CardPerson from "components/CardPerson/CardPerson";
+import { facesHightQlt } from "contains/fakeData";
 import React from "react";
 export interface SectionTeamWBioProps {
   haveBtnShowAll?: boolean;
@@ -29,12 +30,14 @@ const SectionTeamWBio: React.FC<SectionTeamWBioProps> = ({
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
         {Array.from(Array(authNumber).keys()).map((_, i) => (
-          <CardPerson key={String(i)} />
+          <CardPerson key={String(i)} img={facesHightQlt[i]} />
         ))}
       </div>
       {haveBtnShowAll && (
         <div className="text-center">
-          <Button size="large">all team members</Button>
+          <Button size="large" url="/our-team">
+            all team members
+          </Button>
         </div>
       )}
     </div>

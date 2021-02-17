@@ -8,16 +8,19 @@ export interface SectionTextSectionPhotoProps {
 
 const SectionTextSectionPhoto: React.FC<SectionTextSectionPhotoProps> = ({
   img,
+  children,
 }) => {
   const _renderTextBlock = () => {
     return (
       <div className="text-black dark:text-white">
-        <span>
-          Tortor sit nisl purus nunc massa diam velit hac in. Nisl, sem
-          adipiscing risus pulvinar non sed nullam id integer. Integer quis
-          porttitor mauris arcu, pretium orci quam. Enim cursus mattis nunc
-          aliquam pharetra feugiat ante sollicitudin.{" "}
-        </span>
+        {children || (
+          <span>
+            Tortor sit nisl purus nunc massa diam velit hac in. Nisl, sem
+            adipiscing risus pulvinar non sed nullam id integer. Integer quis
+            porttitor mauris arcu, pretium orci quam. Enim cursus mattis nunc
+            aliquam pharetra feugiat ante sollicitudin.{" "}
+          </span>
+        )}
       </div>
     );
   };
@@ -31,7 +34,9 @@ const SectionTextSectionPhoto: React.FC<SectionTextSectionPhotoProps> = ({
               About <span className="text-primary">Warmbeat</span>
             </h2>
             {_renderTextBlock()}
-            <Button size="medium">Get involved</Button>
+            <Button size="medium" url="/volunteer">
+              Get involved
+            </Button>
           </div>
         </div>
         <div className="relative col-start-1 lg:col-start-2 col-end-4 row-start-1">

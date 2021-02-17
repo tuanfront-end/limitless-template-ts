@@ -1,10 +1,13 @@
 import { _getImgHightQualityRd, _getTitleRd } from "contains/fakeData";
 import React from "react";
+import { Link } from "react-router-dom";
 export interface CardHorizontalProgram2Props {
   isRight?: boolean;
+  img?: string;
 }
 const CardHorizontalProgram2: React.FC<CardHorizontalProgram2Props> = ({
   isRight = false,
+  img,
 }) => {
   const title = _getTitleRd();
 
@@ -18,11 +21,11 @@ const CardHorizontalProgram2: React.FC<CardHorizontalProgram2Props> = ({
         className={`block object-cover flex-shrink-0 h-auto md:w-6/12 ${
           isRight ? "md:pl-8 lg:pl-10" : "md:pr-8 lg:pr-10"
         }`}
-        src={_getImgHightQualityRd()}
+        src={img || _getImgHightQualityRd()}
         alt={title}
       />
       <div
-        className={`flex items-start justify-center flex-col space-y-4 md:py-32 lg:py-40 md:w-6/12 ${
+        className={`flex items-start justify-center flex-col space-y-4 md:py-32 lg:py-48 md:w-6/12 ${
           isRight ? "md:pr-8 lg:pr-10" : "md:pl-8 lg:pl-10"
         }`}
       >
@@ -35,12 +38,12 @@ const CardHorizontalProgram2: React.FC<CardHorizontalProgram2Props> = ({
           interdum vel nisi, in enim sagittis at. Netus sagittis eleifend
           aliquet urna quis.
         </span>
-        <a
+        <Link
           className="block uppercase shadow-link-thin hover:shadow-link-tick text-black dark:text-white text-link-medium lg:text-link-large font-bold tracking-wider px-1"
-          href="#root"
+          to="/program-single"
         >
           Learn More
-        </a>
+        </Link>
       </div>
     </div>
   );

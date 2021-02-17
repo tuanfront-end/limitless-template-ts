@@ -17,6 +17,9 @@ export interface LocationStates {
   "/donate"?: {};
   "/style-guide"?: {};
   "/blog-single"?: {};
+  "/program-single"?: {};
+  "/event-single"?: {};
+  "/career-single"?: {};
   //
   "/c-alerts"?: {};
   "/c-buttons"?: {};

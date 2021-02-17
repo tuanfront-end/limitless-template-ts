@@ -1,4 +1,6 @@
 import React, { FC } from "react";
+import { Link } from "react-router-dom";
+import { LocationStates } from "routers/types";
 
 export interface ButtonProps {
   containerClassName?: string;
@@ -8,7 +10,7 @@ export interface ButtonProps {
   disabled?: boolean;
   isOnlyIcon?: boolean;
   modalToggleId?: string;
-  url?: string;
+  url?: keyof LocationStates | "#root";
 }
 
 const Button: FC<ButtonProps> = ({
@@ -18,7 +20,7 @@ const Button: FC<ButtonProps> = ({
   color = "primary",
   disabled = false,
   isOnlyIcon = false,
-  url = "#root",
+  url,
   children,
   modalToggleId,
 }) => {
@@ -102,13 +104,13 @@ const Button: FC<ButtonProps> = ({
 
   if (!!url) {
     return (
-      <a
-        href={url}
+      <Link
+        to={url}
         className={`ttnc-button ${classes} inline-flex items-center justify-center text-center hover:shadow-none`}
         data-ttnc-modal-toggle={modalToggleId}
       >
         {children || `This Button`}
-      </a>
+      </Link>
     );
   }
 

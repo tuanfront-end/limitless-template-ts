@@ -1,5 +1,6 @@
 import Button from "components/Button/Button";
 import CardVertical from "components/CardVertical/CardVertical";
+import { featuredImgs } from "contains/fakeData";
 import React from "react";
 
 const SectionBlog = () => {
@@ -17,13 +18,15 @@ const SectionBlog = () => {
         </span>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
-        <CardVertical />
-        <CardVertical />
-        <CardVertical />
-        <CardVertical />
+        <CardVertical imgSrc={featuredImgs[4]} />
+        <CardVertical imgSrc={featuredImgs[5]} />
+        <CardVertical imgSrc={featuredImgs[6]} />
+        <CardVertical imgSrc={featuredImgs[7]} />
       </div>
       <div className="text-center">
-        <Button size="large">all blog posts</Button>
+        <Button size="large" url="/the-blog">
+          all blog posts
+        </Button>
       </div>
     </div>
   );
