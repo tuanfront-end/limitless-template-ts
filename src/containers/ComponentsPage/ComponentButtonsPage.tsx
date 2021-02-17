@@ -162,7 +162,7 @@ const ComponentButtonsPage = () => {
   return (
     <div className="ttnc-ComponentButtonsPage bg-white dark:bg-black">
       <div className="py-20 px-4 max-w-body mx-auto space-y-20">
-        <h1 className="text-f2 dark:text-white">Buttons</h1>
+        <h1 className="text-f2 dark:text-white font-bold">Buttons</h1>
         <div className="space-y-20">
           {_renderFilled()}
           {_renderGhost()}

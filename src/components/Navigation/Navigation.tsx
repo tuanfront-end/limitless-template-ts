@@ -37,7 +37,7 @@ const DATABASE: NavItemType[] = [
   },
   {
     id: 16,
-    name: "Getinvolved",
+    name: "Get Involved",
     link: "/volunteer",
     children: [
       { id: 17, name: "Volunteer", link: "/volunteer" },

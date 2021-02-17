@@ -26,6 +26,10 @@ import ComponentFormsLayoutPage from "containers/ComponentsPage/ComponentFormsLa
 import ComponentMessagesPage from "containers/ComponentsPage/ComponentMessagesPage";
 import ComponentModalDropdownsPage from "containers/ComponentsPage/ComponentModalDropdownsPage";
 import Button from "components/Button/Button";
+import ProgramSinglePage from "containers/ProgramSinglePage/ProgramSinglePage";
+import EventSinglePage from "containers/EventSinglePage/EventSinglePage";
+import CareerSinglePage from "containers/CareerSinglePage/CareerSinglePage";
+import ButtonScroll from "components/ButtonScroll/ButtonScroll";
 
 export const pages: Page[] = [
   { path: "/", exact: true, component: HomePage },
@@ -42,6 +46,9 @@ export const pages: Page[] = [
   { path: "/the-blog", exact: true, component: BlogPage },
   { path: "/blog-single", exact: true, component: BlogSinglePage },
   { path: "/donate", exact: true, component: DonatePage },
+  { path: "/program-single", exact: true, component: ProgramSinglePage },
+  { path: "/event-single", exact: true, component: EventSinglePage },
+  { path: "/career-single", exact: true, component: CareerSinglePage },
   { path: "/style-guide", exact: true, component: ComponentsPage },
   { path: "/components", exact: true, component: ComponentsPage },
   //
@@ -78,9 +85,15 @@ const Routes = () => {
 
       {/* === FOOTER... === */}
       <Footer />
-      <span className="z-50 fixed bottom-4 right-4">
-        <a className="p-2 bg-primary text-white" href="#root">
-          Top
+      <span
+        className="z-50 fixed bottom-4 right-4 hidden"
+        id="ttnc-btn-backtotop"
+      >
+        <a
+          className="py-1 px-2 text-white border-2 border-primary bg-white"
+          href="#root"
+        >
+          <ButtonScroll isUp />
         </a>
       </span>
     </BrowserRouter>

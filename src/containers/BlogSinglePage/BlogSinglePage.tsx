@@ -5,8 +5,8 @@ import Author from "./Author";
 import CommentArea from "./CommentArea";
 import DetailContent from "./Typographys";
 import PageHeader from "./PageHeader";
-import PostInfoAndShare from "./PostInfoAndShare";
 import RelatedPosts from "./RelatedPosts";
+import PostInfoAndShare from "components/PostInfoAndShare/PostInfoAndShare";
 
 export interface BlogSinglePageProps {
   sidebarEnable?: boolean;
@@ -34,7 +34,7 @@ const BlogSinglePage: FC<BlogSinglePageProps> = ({ sidebarEnable = false }) => {
 
   return (
     <div
-      className={`wil-detail-page ${
+      className={`ttnc-detail-page ${
         !sidebarEnable
           ? "wil-detail-page--full"
           : "wil-detail-page--has-sidebar"
@@ -42,15 +42,14 @@ const BlogSinglePage: FC<BlogSinglePageProps> = ({ sidebarEnable = false }) => {
     >
       <Container>
         <PageHeader />
-
         <div
           className={`grid grid-cols-1 ${
             sidebarEnable ? " lg:grid-cols-3 gap-5 xl:gap-8" : ""
-          } mb-12`}
+          } pb-12`}
         >
           <div className={sidebarEnable ? "lg:col-span-2" : ""}>
             <div
-              className={`wil-prose max-w-body ${
+              className={`max-w-body ${
                 sidebarEnable
                   ? "mr-auto lg:mr-0 ml-auto 2xl:mr-auto"
                   : "mx-auto"
@@ -63,13 +62,12 @@ const BlogSinglePage: FC<BlogSinglePageProps> = ({ sidebarEnable = false }) => {
               </div>
               {/* <!-- .entry-content --> */}
               <div className="my-10">
-                <TagBadge containerClassName="mr-2 mb-1" />
-                <TagBadge containerClassName="mr-2 mb-1" />
-                <TagBadge containerClassName="mr-2 mb-1" />
-                <TagBadge containerClassName="mr-2 mb-1" />
-                <TagBadge containerClassName="mr-2 mb-1" />
+                <TagBadge containerClassName="mr-2 mb-1 border border-gray-300" />
+                <TagBadge containerClassName="mr-2 mb-1 border border-gray-300" />
+                <TagBadge containerClassName="mr-2 mb-1 border border-gray-300" />
+                <TagBadge containerClassName="mr-2 mb-1 border border-gray-300" />
               </div>
-              <div className="flex lg:hidden mb-10">
+              <div className="flex md:hidden mb-10">
                 <PostInfoAndShare isHorizontal />
               </div>
               <Author />

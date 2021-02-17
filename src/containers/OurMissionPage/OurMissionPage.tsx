@@ -4,7 +4,7 @@ import React from "react";
 
 const OurMissionPage = () => {
   return (
-    <div className="ttnc-OurMissionPage bg-white dark:bg-black">
+    <div className="ttnc-OurMissionPage bg-white dark:bg-black py-20 space-y-20">
       <SectionMissionNextPrev
         title="We exist for your success. "
         id="first"

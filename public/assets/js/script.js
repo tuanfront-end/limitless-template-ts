@@ -6,6 +6,7 @@ window.addEventListener("load", function () {
   _toggleHiddenClass();
   _newGlideCarousel();
   _setBgColorForAvatar();
+  _toggleHiddenBackToTopBtn();
   //
 });
 
@@ -37,6 +38,33 @@ const avatarColors = [
   "#5E13BD",
   "#E208A7",
 ];
+
+function _toggleHiddenBackToTopBtn() {
+  const btn = document.getElementById("ttnc-btn-backtotop");
+  if (!btn) return;
+  const doc = document.documentElement;
+  let _timeOut = null;
+  window.addEventListener("scroll", function (event) {
+    const top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+    if (top < 1000) {
+      if (btn.classList.contains("block")) {
+        _timeOut && clearTimeout(_timeOut);
+        _timeOut = setTimeout(() => {
+          btn.classList.add("hidden");
+          btn.classList.remove("block");
+        }, 100);
+      }
+    } else {
+      if (btn.classList.contains("hidden")) {
+        _timeOut && clearTimeout(_timeOut);
+        _timeOut = setTimeout(() => {
+          btn.classList.add("block");
+          btn.classList.remove("hidden");
+        }, 100);
+      }
+    }
+  });
+}
 
 function _toogleNightMode() {
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC

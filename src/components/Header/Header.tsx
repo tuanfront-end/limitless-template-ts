@@ -14,7 +14,9 @@ export default function Header() {
         <Navigation />
         <div className="lg:w-0 lg:flex-1 flex-shrink-0 hidden lg:flex items-center justify-end space-x-4">
           <SwithNightMode />
-          <Button size="small">Get Template</Button>
+          <Button url="/donate" size="small">
+            donate
+          </Button>
         </div>
       </div>
     </div>

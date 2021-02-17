@@ -25,7 +25,7 @@ const SectionMissionNextPrev: React.FC<SectionMissionNextPrevProps> = ({
 }) => {
   return (
     <div
-      className="ttnc-SectionMissionNextPrev min-h-screen grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 py-20"
+      className="ttnc-SectionMissionNextPrev min-h-screen grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10"
       id={id}
     >
       <div className="relative aspect-w-3 aspect-h-3 md:aspect-none">

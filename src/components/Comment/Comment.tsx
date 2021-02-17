@@ -37,18 +37,22 @@ const Comment: FC<CommentProps> = ({
             fugiat neque sapiente?
           </span>
         </div>
-        <div className=" font-medium text-gray-700 dark:text-gray-300 flex items-center leading-none">
-          <i className="las la-thumbs-up text-body leading-none"></i>
-          <span className="mr-3  leading-none">20</span>
-          <i className="las la-thumbs-down text-body  leading-none"></i>
-          <span className="mr-5 leading-none">1</span>
+        <div className=" font-medium text-paragraph-xs-small text-gray-700 dark:text-gray-300 flex items-center leading-none">
+          <a href="#root">
+            <i className="las la-thumbs-up text-body leading-none mr-2px"></i>
+            <span className="mr-3 leading-none">20</span>
+          </a>
+          <a href="#root">
+            <i className="las la-thumbs-down text-body leading-none mr-2px"></i>
+            <span className="mr-5 leading-none">1</span>
+          </a>
           <a href="#root">Reply</a>
         </div>
 
         <div className="absolute right-0 top-0">
           <Dropdown>
             <Dropdown.DropdownTrigger>
-              <i className="text-2xl las la-ellipsis-h leading-none"></i>
+              <i className="text-2xl las la-ellipsis-h leading-none text-gray-700 dark:text-gray-300"></i>
             </Dropdown.DropdownTrigger>
             <Dropdown.DropdownPanel popperPlacement="bottom-end">
               <div className="text-base text-gray-700 py-2 leading-tight">

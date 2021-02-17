@@ -5,7 +5,7 @@ const ComponentAvatarsPage = () => {
   return (
     <div className="ttnc-ComponentAvatarsPage bg-white dark:bg-black">
       <div className="py-20 px-4 max-w-screen-md mx-auto space-y-20">
-        <h1 className="text-f2 dark:text-white">Avatar</h1>
+        <h1 className="text-f2 dark:text-white font-bold">Avatar</h1>
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-4 gap-y-14">
           <div className="space-y-8 grid grid-cols-1">
             <Avatar />

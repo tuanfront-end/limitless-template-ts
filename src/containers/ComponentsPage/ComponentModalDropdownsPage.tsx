@@ -8,7 +8,7 @@ const ComponentModalDropdownsPage = () => {
   return (
     <div className="ttnc-ComponentModalDropdownsPage bg-white dark:bg-black">
       <div className="py-20 px-4 max-w-body mx-auto">
-        <h2 className="text-f2 dark:text-white mb-10">Dropdown</h2>
+        <h2 className="text-f2 dark:text-white mb-10 font-bold">Dropdown</h2>
         <Dropdown>
           <DropdownTrigger />
           <DropdownPanel>
@@ -75,7 +75,7 @@ const ComponentModalDropdownsPage = () => {
         </Dropdown>
 
         {/*  */}
-        <h2 className="text-f2 dark:text-white mt-20 mb-10">Modal</h2>
+        <h2 className="text-f2 dark:text-white mt-20 mb-10 font-bold">Modal</h2>
         <Modal id="ttnc-modal-demo2" />
       </div>
     </div>
