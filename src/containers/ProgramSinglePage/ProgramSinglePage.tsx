@@ -5,6 +5,7 @@ import DetailContent from "./Typographys";
 import PageHeader from "./PageHeader";
 import Button from "components/Button/Button";
 import PostInfoAndShare from "components/PostInfoAndShare/PostInfoAndShare";
+import SectionCommentArea from "components/SectionCommentArea/SectionCommentArea";
 
 export interface ProgramSinglePageProps {
   sidebarEnable?: boolean;
@@ -77,6 +78,8 @@ const ProgramSinglePage: FC<ProgramSinglePageProps> = ({
                 <div className="flex md:hidden mb-10">
                   <PostInfoAndShare isHorizontal />
                 </div>
+                <hr className="w-full border-t-2 border-gray-200 mb-8" />
+                <SectionCommentArea containerClassName="mb-10" />
               </div>
             </div>
             {sidebarEnable && (

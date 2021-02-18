@@ -25,14 +25,6 @@ const Typographys = () => {
           <code>h1 necessitatibus</code> fuga dolores alias, in ea.
         </p>
       </blockquote>
-      <p>
-        We hear you, but we're not convinced that simply disabling our base
-        styles is what you really want. You don't want to have to remove
-        annoying margins every time you use a <code>p</code> element in a piece
-        of your dashboard UI. And I doubt you really want your blog posts to use
-        the user-agent styles either — you want them to look <em>awesome</em>,
-        not awful.
-      </p>
 
       <p>
         It adds a new <code>prose</code> class that you can slap on any block of
@@ -129,13 +121,6 @@ const Typographys = () => {
             For some reason I think this looks cool which is unfortunate because
             it's pretty annoying to get the styles right.
           </p>
-          <p>
-            I often have two or three paragraphs in these list items, too, so
-            the hard part is getting the spacing between the paragraphs, list
-            item heading, and separate list items to all make sense. Pretty
-            tough honestly, you could make a strong argument that you just
-            shouldn't write this way.
-          </p>
         </li>
         <li>
           <p>
@@ -144,8 +129,7 @@ const Typographys = () => {
           <p>
             I explained what I'm doing already in the previous list item, but a
             list wouldn't be a list if it only had one item, and we really want
-            this to look realistic. That's why I've added this second list item
-            so I actually have something to look at when writing the styles.
+            this to look realistic.
           </p>
         </li>
         <li>
@@ -155,8 +139,7 @@ const Typographys = () => {
           <p>
             I think it probably would've been fine to just use two items but
             three is definitely not worse, and since I seem to be having no
-            trouble making up arbitrary things to type, I might as well include
-            it.
+            trouble making up arbitrary things to type
           </p>
         </li>
       </ul>
@@ -172,10 +155,7 @@ const Typographys = () => {
         style their code blocks but it wouldn't hurt to make them look{" "}
         <em>okay</em> out of the box, even with no syntax highlighting.
       </p>
-      <p>
-        Here's what a default <code>tailwind.config.js</code> file looks like at
-        the time of writing:
-      </p>
+
       <p>Hopefully that looks good enough to you.</p>
       <h3>What about nested lists?</h3>
       <p>
@@ -187,11 +167,6 @@ const Typographys = () => {
         <li>
           <strong>Nested lists are rarely a good idea.</strong>
           <ul>
-            <li>
-              You might feel like you are being really "organized" or something
-              but you are just creating a gross shape on the screen that is hard
-              to read.
-            </li>
             <li>
               Nested navigation in UIs is a bad idea too, keep things as flat as
               possible.
@@ -216,10 +191,6 @@ const Typographys = () => {
         <li>
           <strong>Two items isn't really a list, three is good though.</strong>
           <ul>
-            <li>
-              Again please don't nest lists if you want people to actually read
-              your content.
-            </li>
             <li>Nobody wants to look at this.</li>
             <li>I'm upset that we even have to bother styling this.</li>
           </ul>
@@ -326,31 +297,6 @@ const Typographys = () => {
         time making it look good. This{" "}
         <em>"wrap the code blocks in backticks"</em> trick works pretty well
         though really.
-      </p>
-      <p>
-        Another thing I've done in the past is put a <code>code</code> tag
-        inside of a link, like if I wanted to tell you about the{" "}
-        <a href="https://github.com/tailwindcss/docs">
-          <code>tailwindcss/docs</code>
-        </a>{" "}
-        repository. I don't love that there is an underline below the backticks
-        but it is absolutely not worth the madness it would require to avoid it.
-      </p>
-      <h4>
-        We haven't used an <code>h4</code> yet
-      </h4>
-      <p>
-        But now we have. Please don't use <code>h5</code> or <code>h6</code> in
-        your content, Medium only supports two heading levels for a reason, you
-        animals. I honestly considered using a <code>before</code>{" "}
-        pseudo-element to scream at you if you use an <code>h5</code> or{" "}
-        <code>h6</code>.
-      </p>
-      <p>
-        We don't style them at all out of the box because <code>h4</code>{" "}
-        elements are already so small that they are the same size as the body
-        copy. What are we supposed to do with an <code>h5</code>, make it{" "}
-        <em>smaller</em> than the body copy? No thanks.
       </p>
     </div>
   );

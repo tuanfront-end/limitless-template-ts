@@ -5,8 +5,8 @@ import React from "react";
 const Typographys = () => {
   return (
     <div className="dark:text-gray-100 mb-10">
-      <h1 className="text-f1 font-bold shadow-link-tick px-2 inline-block mb-0">
-        Coats And Coffee!
+      <h1 className="text-f3 md:text-f1 font-bold shadow-link-tick px-2 inline-block mb-0">
+        Tax Prep Specialist
       </h1>
       <div className="prose prose-sm sm:prose lg:prose-lg mx-auto dark:text-gray-100">
         <div>
@@ -60,7 +60,9 @@ const Typographys = () => {
         id="Career-Apply-Form"
       >
         <div className="space-y-4">
-          <h2 className="text-f2 font-bold">Apply for this position</h2>
+          <h2 className="text-f3 md:text-f2 font-bold">
+            Apply for this position
+          </h2>
           <Input name="Apply-firtName" label="First Name" />
           <Input name="Apply-lastName" label="Last Name" />
           <Input name="Apply-Email" type="email" label="Email Address" />

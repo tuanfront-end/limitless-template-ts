@@ -21,7 +21,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({}) => {
         <span className="uppercase font-semibold text-paragraph-small mb-4 block">
           COLLEGE PEER MENTORSHIPS
         </span>
-        <h2 className="text-f2 font-semibold mb-10">{title}</h2>
+        <h2 className="text-f3 sm:text-f2 font-semibold mb-10">{title}</h2>
       </div>
     </div>
   );

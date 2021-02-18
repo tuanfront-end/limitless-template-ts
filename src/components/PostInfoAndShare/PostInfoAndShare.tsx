@@ -3,10 +3,12 @@ import React from "react";
 
 export interface PostInfoAndShareProps {
   isHorizontal?: boolean;
+  hasCommentsNumber?: boolean;
 }
 
 export default function PostInfoAndShare({
   isHorizontal,
+  hasCommentsNumber = true,
 }: PostInfoAndShareProps) {
   return (
     <div
@@ -18,10 +20,12 @@ export default function PostInfoAndShare({
         <i className="las la-arrow-up text-f5 leading-none mb-1"></i>
         <span className="truncate leading-none">4k3</span>
       </div>
-      <div className="flex flex-col items-center justify-center bg-secondary w-14 h-14 rounded-lg">
-        <i className="las la-comment text-f5 leading-none mb-1"></i>
-        <span className="truncate leading-none">213</span>
-      </div>
+      {hasCommentsNumber && (
+        <div className="flex flex-col items-center justify-center bg-secondary w-14 h-14 rounded-lg">
+          <i className="las la-comment text-f5 leading-none mb-1"></i>
+          <span className="truncate leading-none">213</span>
+        </div>
+      )}
       <button className="flex flex-col items-center justify-center bg-transparent w-14 p-2px">
         <span className="uppercase text-paragraph-tiny text-gray-800 dark:text-gray-100 font-bold">
           Save

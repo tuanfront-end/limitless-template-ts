@@ -3,9 +3,9 @@ import Input from "components/Input/Input";
 import Textarea from "components/Textarea/Textarea";
 import React from "react";
 
-export default function CommentArea() {
+export default function SectionCommentArea({ containerClassName = "" }) {
   return (
-    <div className="">
+    <div className={`ttnc-SectionCommentArea ${containerClassName}`}>
       <h5 className="text-f5 mb-5">Response (30)</h5>
       <form className="mb-8" action="">
         <Textarea name="comment-name" placeholder="What are your thought?" />

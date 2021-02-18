@@ -7,7 +7,7 @@ const DonatePage = () => {
     <div className="ttnc-DonatePage bg-white dark:bg-black">
       <div className="container text-center my-20">
         <h1 className="text-f1 xl:text-d-small font-bold mb-20">
-          3 way to donate to Warnbeat
+          3 way to donate to Warmbeat
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-16">
           <div className="flex flex-col items-center justify-between space-y-8">

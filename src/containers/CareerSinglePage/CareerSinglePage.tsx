@@ -25,7 +25,7 @@ const CareerSinglePage: FC<CareerSinglePageProps> = ({
       return (
         <div className="hidden md:flex items-start flex-shrink-0 xl:absolute right-full xl:top-0 xl:h-full w-20 2xl:w-24 z-0">
           <div className="sticky top-6">
-            <PostInfoAndShare />
+            <PostInfoAndShare hasCommentsNumber={false} />
           </div>
         </div>
       );
@@ -33,7 +33,7 @@ const CareerSinglePage: FC<CareerSinglePageProps> = ({
     return (
       <div className="hidden md:flex items-start flex-shrink-0 lg:absolute right-full lg:top-0 lg:h-full w-20 2xl:w-24 z-0">
         <div className="sticky top-8">
-          <PostInfoAndShare />
+          <PostInfoAndShare hasCommentsNumber={false} />
         </div>
       </div>
     );
@@ -65,7 +65,7 @@ const CareerSinglePage: FC<CareerSinglePageProps> = ({
                 {/* <!-- .entry-content --> */}
 
                 <div className="flex md:hidden mb-10">
-                  <PostInfoAndShare isHorizontal />
+                  <PostInfoAndShare hasCommentsNumber={false} isHorizontal />
                 </div>
               </div>
             </div>

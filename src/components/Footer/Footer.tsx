@@ -49,6 +49,9 @@ export default function Footer() {
             <FooterWidgetNav dataIndex={2} />
           </li>
           <li className="w-full max-w-xs lg:max-w-sm my-4">
+            <h2 className="uppercase text-neutral-100 dark:text-neutral-900 font-semibold mb-1">
+              Stay up to date!
+            </h2>
             <form action="#" method="post" className="grid grid-cols-1 gap-6">
               <Input name="footerName" label="Name" />
               <Input name="footerEmail" label="Email Address" type="email" />

@@ -77,7 +77,7 @@ const ButtonScroll: React.FC<ButtonScrollProps> = ({
   };
 
   return (
-    <div className="relative text-primary flex items-center">
+    <span className="relative text-primary flex items-center">
       <span className={isUp ? "transform rotate-180" : ""}>
         {_renderVector()}
       </span>
@@ -86,7 +86,7 @@ const ButtonScroll: React.FC<ButtonScrollProps> = ({
           {children}
         </span>
       )}
-    </div>
+    </span>
   );
 };
 

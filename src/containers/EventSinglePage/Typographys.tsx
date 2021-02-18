@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Typographys = () => {
   return (
     <div className="mb-10 dark:text-gray-100">
-      <h1 className="text-f1 font-bold shadow-link-tick px-2 inline-block mb-0">
+      <h1 className="text-f3 md:text-f1 font-bold shadow-link-tick px-2 inline-block mb-0">
         Coats And Coffee!
       </h1>
       <div className="prose prose-sm sm:prose lg:prose-lg mx-auto dark:text-gray-100">

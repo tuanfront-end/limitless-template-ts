@@ -124,15 +124,15 @@ const avatarColors = [
 ];
 
 const facesHightQlt = [
-  "https://static.diverseui.com/male-82.jpg",
-  "https://static.diverseui.com/male-64.jpg",
-  "https://static.diverseui.com/male-65.jpg",
-  "https://static.diverseui.com/marvell.png",
-  "https://static.diverseui.com/female-81.jpg",
-  "https://static.diverseui.com/female-103.jpg",
-  "https://static.diverseui.com/abcdef.jpg",
-  "https://static.diverseui.com/female-2.jpg",
-  "https://static.diverseui.com/female-59.jpg",
+  "https://images.generated.photos/KSkFZay8lawllgpfawH1UjaofmrXm1sPLZiauTWaYag/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zLzAw/MzYyNTIuanBn.jpg",
+  "https://images.generated.photos/z6ddT-zUY08aZe4PNeF6Bl5wGGbToASRmPfh2HqDCXA/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zLzA5/OTk1NzAuanBn.jpg",
+  "https://images.generated.photos/ER21GWPw9Uyw5d4UkN7ayhDm3ClTgthP71kEfoHY168/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zLzAy/MTI4MDQuanBn.jpg",
+  "https://images.generated.photos/DQ4EKrAPT-e5slG3cXmSw20uJ2AwwhOzJeVnpI9tlMA/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zLzA5/OTk4MDcuanBn.jpg",
+  "https://images.generated.photos/_aYKz7bCHV1O1blBe8A_v-khAtevIfunaxpLTTP4_gI/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yy/XzAzNTI2NzkuanBn.jpg",
+  "https://uifaces.co/our-content/donated/yn7PKqTT.jpg",
+  "https://images.generated.photos/3GlJFE4E6sIACSIfP-4k1UnswL6Akh5jDNIVCYtkqe0/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yy/XzAzNTE5MzkuanBn.jpg",
+  "https://images.generated.photos/z_w45-PQ28jY08f8O4BMykbnCVpwXsaoDvzoBgPYCg0/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yy/XzA4MzYxMDIuanBn.jpg",
+  "https://images.generated.photos/-a99Op_mk7sAPi-jXuHR9IMBc_Uj1ncJsu8fvWLzsrA/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zLzA5/ODc1MTQuanBn.jpg",
 ];
 
 function _getTitleRd() {

@@ -1,10 +1,13 @@
 import SectionBlog from "components/SectionBlog/SectionBlog";
 import SectionHeroFullImage from "components/SectionHeroFullImage/SectionHeroFullImage";
 import SectionImageCarousel from "components/SectionImageCarousel/SectionImageCarousel";
+import SectionLogoPartner from "components/SectionLogoPartner/SectionLogoPartner";
 import SectionMission from "components/SectionMission/SectionMission";
 import SectionProgram from "components/SectionProgram/SectionProgram";
+import SectionStats from "components/SectionStats/SectionStats";
 import SectionSubscribe from "components/SectionSubscribe/SectionSubscribe";
 import SectionTeam from "components/SectionTeam/SectionTeam";
+import SectionTeamWBio from "components/SectionTeamWBio/SectionTeamWBio";
 import SectionTextSectionPhoto from "components/SectionTextSectionPhoto/SectionTextSectionPhoto";
 import React from "react";
 
@@ -12,7 +15,7 @@ export default function HomePage() {
   return (
     <div className="ttnc-home-page bg-white dark:bg-black">
       <SectionHeroFullImage />
-      <SectionTextSectionPhoto img="https://images.pexels.com/photos/3662773/pexels-photo-3662773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+      <SectionTextSectionPhoto img="https://images.pexels.com/photos/6141092/pexels-photo-6141092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
         <span>
           Warmbeat is a budding non-profit based in Boise, ID founded by Abel
           Hancock in 2018. <br />
@@ -28,6 +31,9 @@ export default function HomePage() {
         </span>
       </SectionTextSectionPhoto>
       <SectionProgram />
+
+      <SectionStats />
+      <SectionLogoPartner />
       <SectionMission
         img="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         title="We exist for your success."
@@ -36,6 +42,7 @@ export default function HomePage() {
       </SectionMission>
       <SectionSubscribe />
       <SectionTeam />
+
       <SectionBlog />
       <SectionImageCarousel />
     </div>

@@ -70,7 +70,9 @@ const Routes = () => {
       <Annoucement />
       {/* === HEADER... === */}
       <div className="stickye top-0 z-50">
-        <Header />
+        <div className="bg-white dark:bg-gray-800 border border-gray-300 lg:border-0">
+          <Header />
+        </div>
       </div>
 
       {/* === PAGE CONTENT... === */}
@@ -85,7 +87,7 @@ const Routes = () => {
 
       {/* === FOOTER... === */}
       <Footer />
-      <span
+      <div
         className="z-50 fixed bottom-4 right-4 hidden"
         id="ttnc-btn-backtotop"
       >
@@ -95,7 +97,7 @@ const Routes = () => {
         >
           <ButtonScroll isUp />
         </a>
-      </span>
+      </div>
     </BrowserRouter>
   );
 };

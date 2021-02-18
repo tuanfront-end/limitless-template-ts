@@ -2,11 +2,11 @@ import Container from "components/Container/Container";
 import TagBadge from "components/TagBadge/TagBadge";
 import React, { FC } from "react";
 import Author from "./Author";
-import CommentArea from "./CommentArea";
 import DetailContent from "./Typographys";
 import PageHeader from "./PageHeader";
 import RelatedPosts from "./RelatedPosts";
 import PostInfoAndShare from "components/PostInfoAndShare/PostInfoAndShare";
+import SectionCommentArea from "components/SectionCommentArea/SectionCommentArea";
 
 export interface BlogSinglePageProps {
   sidebarEnable?: boolean;
@@ -72,7 +72,7 @@ const BlogSinglePage: FC<BlogSinglePageProps> = ({ sidebarEnable = false }) => {
               </div>
               <Author />
               <hr className="w-full border-t-2 border-gray-200 mb-8" />
-              <CommentArea />
+              <SectionCommentArea />
             </div>
           </div>
         </div>
